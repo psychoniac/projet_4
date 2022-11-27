@@ -1,0 +1,19 @@
+{
+  "name": "projet_4",
+  "version": "1.0.0",
+  "description": "projet ' de ma formation open classroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychoniac/projet_4.git"
+  },
+  "author": "jlnko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psychoniac/projet_4/issues"
+  },
+  "homepage": "https://github.com/psychoniac/projet_4#readme"
+}
