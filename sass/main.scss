@@ -1,14 +1,12 @@
+@import url(./utils/_variables.scss);
+
+.localisation {
+    display: flex;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
 h1 {
-    color: red;
-    font-size: 50px;
-}
+    font-family: Shrikhand;
 
-.contener {
-    background-color: black;
-}
-
-$color: red;
-
-.contener>p {
-    background-color: $color;
 }
