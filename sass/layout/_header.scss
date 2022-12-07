@@ -1,0 +1,35 @@
+.contener {
+    min-width: 365px;
+}
+
+header {
+    text-align: center;
+
+    h1 {
+        font-family: $font-title;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+    }
+}
+
+.localisation {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+
+    i {
+        width: 10%;
+        padding: 1em;
+        text-align: center;
+    }
+
+    p {
+        width: 50%;
+        font-family: $font-txt;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}

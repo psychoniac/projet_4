@@ -1,12 +1,5 @@
-@import url(./utils/_variables.scss);
-
-.localisation {
-    display: flex;
-    font-family: Roboto;
-    font-weight: 400;
-}
-
-h1 {
-    font-family: Shrikhand;
-
-}
+@import "./utils/variables";
+@import "./base/reset";
+@import "./layout/header";
+@import "./composants/button";
+@import "./pages/presentation";

@@ -1,12 +1,95 @@
-@import url(./utils/_variables.scss);
-.localisation {
-  display: flex;
-  font-family: Roboto;
-  font-weight: 400;
+@charset "UTF-8";
+/*Liste des couleurs*/
+/*Liste des polices d'écriture*/
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-family: Shrikhand;
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
+.contener {
+  min-width: 365px;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.localisation {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+.localisation i {
+  width: 10%;
+  padding: 1em;
+  text-align: center;
+}
+.localisation p {
+  width: 50%;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 216px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+.presentation {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.presentation__content1 {
+  font-family: "Roboto";
+  width: 70%;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.presentation__content2 {
+  width: 80%;
+  height: 46px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
