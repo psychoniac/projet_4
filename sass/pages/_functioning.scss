@@ -1,0 +1,9 @@
+.functioning {
+    @include colum_contener();
+    gap: 20px;
+}
+
+.functioning__item {
+    display: flex;
+
+}
