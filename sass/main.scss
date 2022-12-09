@@ -1,7 +1,10 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./layout/header";
+@import "./base/main";
 @import "./composants/button";
 @import "./pages/presentation";
-@import "./utils/mixin";
 @import "./pages/functioning";
+@import "./composants/card";
+@import "./layout/footer";

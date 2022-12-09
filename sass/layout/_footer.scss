@@ -1,0 +1,11 @@
+footer {
+    @include colum_contener;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #353535;
+
+}
+
+.footer__item {
+    @include row_contener;
+}

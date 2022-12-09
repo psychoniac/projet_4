@@ -1,0 +1,17 @@
+.card {
+    width: 335px;
+
+    &__img {
+        width: 100%;
+        height: 180px;
+        object-fit: fill;
+    }
+
+    &__bottom {
+        @include row_contener;
+
+        &__title {
+            @include colum_contener;
+        }
+    }
+}
