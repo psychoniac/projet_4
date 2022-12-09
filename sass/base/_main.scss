@@ -1,3 +1,7 @@
-main {
+.restaurants {
     @include colum_contener;
+    gap: 10px;
+    width: 100%;
+    background-color: lightgrey;
+    padding-bottom: 25px;
 }

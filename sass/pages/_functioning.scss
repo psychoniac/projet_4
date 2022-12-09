@@ -1,9 +1,18 @@
 .functioning {
     @include colum_contener();
     gap: 20px;
+    margin-bottom: 25px;
 }
 
 .functioning__item {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F7F7;
+    height: 50px;
+    padding: 5px;
+    width: 320px;
+    border-radius: 25px;
+
 
 }
