@@ -1,17 +1,24 @@
 .functioning {
-    @include colum_contener();
-    gap: 20px;
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 3em;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font-txt;
+        padding: 50px 25px 20px;
+    }
 }
 
 .functioning__item {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     background-color: #F7F7F7;
     height: 50px;
     padding: 5px;
-    width: 320px;
     border-radius: 25px;
 
 

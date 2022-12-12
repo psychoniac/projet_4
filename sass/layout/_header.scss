@@ -1,17 +1,12 @@
-header {
-    text-align: center;
-
-    h1 {
-        font-family: $font-title;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 30px;
-    }
+.header__logo {
+    width: 200px;
+    padding-top: 1em;
+    padding-left: 4em;
 }
 
+
 .localisation {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0 4em 0 4em;
     background-color: grey;
     display: flex;
     align-items: center;
@@ -23,9 +18,8 @@ header {
     }
 
     p {
-        width: 50%;
         font-family: $font-txt;
         font-weight: 500;
-        font-size: 16px;
+
     }
 }

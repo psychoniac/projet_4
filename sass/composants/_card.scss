@@ -1,5 +1,6 @@
 .card {
-    width: 335px;
+    width: 90%;
+    height: 250px;
     background-color: white;
     border-radius: 20px;
 
@@ -12,7 +13,7 @@
 
     &__bottom {
         @include row_contener;
-        gap: 50px;
+        justify-content: space-between;
 
         &__title {
             @include colum_contener;

@@ -11,19 +11,21 @@ p {
   margin: 0%;
 }
 
-header {
-  text-align: center;
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
-header h1 {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 30px;
+
+.header__logo {
+  width: 200px;
+  padding-top: 1em;
+  padding-left: 4em;
 }
 
 .localisation {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0 4em 0 4em;
   background-color: grey;
   display: flex;
   align-items: center;
@@ -34,18 +36,16 @@ header h1 {
   text-align: center;
 }
 .localisation p {
-  width: 50%;
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 16px;
 }
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 216px;
-  height: 50px;
+  width: 80%;
+  height: 3em;
   border: none;
   border-radius: 25px;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -63,7 +63,8 @@ header h1 {
 }
 
 .card {
-  width: 335px;
+  width: 90%;
+  height: 250px;
   background-color: white;
   border-radius: 20px;
 }
@@ -77,7 +78,7 @@ header h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  justify-content: space-between;
 }
 .card__bottom__title {
   display: flex;
@@ -105,43 +106,47 @@ header h1 {
 }
 
 .presentation {
-  background-color: lightgrey;
+  background-color: rgb(230, 229, 229);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+  padding: 2em 0 2em 0;
   font-family: "Roboto";
 }
 .presentation__content1 {
-  width: 70%;
+  width: 80%;
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 }
 .presentation__content2 {
-  width: 80%;
+  letter-spacing: -1px;
   font-size: 18px;
   font-weight: 300;
+  text-align: center;
 }
 
 .functioning {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 25px;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+.functioning__title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 50px 25px 20px;
 }
 
 .functioning__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   background-color: #F7F7F7;
   height: 50px;
   padding: 5px;
-  width: 320px;
   border-radius: 25px;
 }
 
