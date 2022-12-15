@@ -1,11 +1,30 @@
 footer {
-    @include colum_contener;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     background-color: #353535;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    color: white;
 
+    & a {
+        color: white;
+    }
+
+    & h2 {
+        color: white;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        font-family: $font-title;
+        padding-top: 1em;
+    }
 }
 
 .footer__item {
     @include row_contener;
+
+    & i {
+        padding-right: 1em;
+    }
 }

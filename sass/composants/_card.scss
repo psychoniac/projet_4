@@ -11,36 +11,43 @@
         border-radius: 20px 20px 0 0;
     }
 
+    &__icon {
+        color: $color-primary;
+        padding-right: 2em;
+
+        &:hover {
+            color: red;
+        }
+    }
+
     &__bottom {
         @include row_contener;
         justify-content: space-between;
 
         &__title {
             @include colum_contener;
+            font-family: $font-txt;
+            padding-left: 1em;
         }
-    
-        h2{
-                font-size: 18px;
-                font-weight: 700;
-                padding-left: 1em;
-                padding-top: 0.5em;
-            }
-        h3{
-                font-size: 17px;
-                font-weight: 300;
-                padding-left: 1em;
-                @include bigFont;
-                animation-name: bigest;
-                animation-duration: 5000ms;
-                
-            }
+
+        &__icon {
+            color: $color-primary;
+            padding-right: 2em;
         }
-    &__icon{
-        color: $color-primary;
-        padding-right: 2em;
-        &:hover{
-            color: red;
-            
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 0.5em;
+            font-family: $font-txt;
+            padding-left: 1em;
         }
-    }            
+
+        h3 {
+            font-size: 17px;
+            font-weight: 300;
+            font-family: $font-txt;
+            padding-left: 1em;
+        }
+    }
 }
