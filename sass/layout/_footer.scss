@@ -22,7 +22,8 @@ footer {
 }
 
 .footer__item {
-    @include row_contener;
+    display: flex;
+    align-items: center;
 
     & i {
         padding-right: 1em;

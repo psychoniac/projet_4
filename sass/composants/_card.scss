@@ -11,30 +11,17 @@
         border-radius: 20px 20px 0 0;
     }
 
-    &__icon {
-        color: $color-primary;
-        margin-right: 2em;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 300ms;
-
-        &:hover {
-            color: $color-primary;
-            transform: scale(1.2);
-            color: $color-secondary;
-
-        }
-    }
-
+  
     &__bottom {
         @include row_contener;
         justify-content: space-between;
 
-        &__title {
-            @include colum_contener;
+        &-title {
+            display: flex;
+            flex-direction: column;
         }
 
-        h2 {
+        & h2 {
             font-size: 18px;
             font-weight: 700;
             padding-top: 0.5em;
@@ -42,11 +29,25 @@
             padding-left: 1em;
         }
 
-        h3 {
+        & h3 {
             font-size: 17px;
             font-weight: 300;
             font-family: $font-txt;
             padding-left: 1em;
         }
+        &-icon1 {
+            color: $color-primary;
+            margin-right: 2em;
+            &:hover{
+                visibility: hidden;
+            }
+            &:hover +.card__bottom-icon2{
+                visibility: visible;
+            }
+        }
+        &-icon2{
+            visibility: hidden;
+        }
     }
+
 }
