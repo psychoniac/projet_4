@@ -1,0 +1,41 @@
+@media screen and (min-width: 960px)   {
+    .localisation{
+        height: 50px;
+    }
+    .localisation i{
+        padding: 0%;
+        width: 5%;
+        background-color: #eaeaea;
+
+    }
+    .presentation{
+        background-color: #f5edff;
+    }
+    .functioning{
+        flex-direction: row;
+        justify-content: space-around;
+        &__item{
+            min-width: 300px;
+            
+        }
+    }
+   .card_contener{
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+    .btn {
+        background-color: linear-gradient(200.64deg,#9356DC -5.2%, #FF79DA 110.74%);
+}
+footer{
+    flex-direction: row;
+    padding-left:10em;
+    & h2{
+        position: relative;
+        top: 5%;
+        left: 80%;
+    }}
+    .footer__item{
+        padding-right:1em;
+    }
+
+}
