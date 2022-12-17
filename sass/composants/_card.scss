@@ -13,10 +13,16 @@
 
     &__icon {
         color: $color-primary;
-        padding-right: 2em;
+        margin-right: 2em;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 300ms;
 
         &:hover {
-            color: red;
+            color: $color-primary;
+            transform: scale(1.2);
+            color: $color-secondary;
+
         }
     }
 
@@ -26,13 +32,6 @@
 
         &__title {
             @include colum_contener;
-            font-family: $font-txt;
-            padding-left: 1em;
-        }
-
-        &__icon {
-            color: $color-primary;
-            padding-right: 2em;
         }
 
         h2 {

@@ -22,9 +22,13 @@
         height: 50px;
         padding: 5px;
         border-radius: 25px;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 1600ms;
 
         &:hover {
             background-color: #F5EDFF;
+            transform: scale(0.5);
         }
 
         & i {

@@ -91,10 +91,15 @@ a :hover {
 }
 .card__icon {
   color: #9356DC;
-  padding-right: 2em;
+  margin-right: 2em;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 300ms;
 }
 .card__icon:hover {
-  color: red;
+  color: #9356DC;
+  transform: scale(1.2);
+  color: #FF79DA;
 }
 .card__bottom {
   display: flex;
@@ -106,12 +111,6 @@ a :hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto";
-  padding-left: 1em;
-}
-.card__bottom__icon {
-  color: #9356DC;
-  padding-right: 2em;
 }
 .card__bottom h2 {
   font-size: 18px;
@@ -189,9 +188,13 @@ a :hover {
   height: 50px;
   padding: 5px;
   border-radius: 25px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1600ms;
 }
 .functioning__item:hover {
   background-color: #F5EDFF;
+  transform: scale(0.5);
 }
 .functioning__item i {
   padding-left: 2em;
