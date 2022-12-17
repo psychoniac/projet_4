@@ -7,6 +7,6 @@
 
 @mixin row_contener {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
