@@ -15,12 +15,10 @@
     &__bottom {
         @include row_contener;
         justify-content: space-between;
-
-        &-title {
+                &-title {
             display: flex;
             flex-direction: column;
         }
-
         & h2 {
             font-size: 18px;
             font-weight: 700;
@@ -35,15 +33,25 @@
             font-family: $font-txt;
             padding-left: 1em;
         }
-        &-icon1 {
-            color: $color-primary;
-        }
-        &-icon1::after{
-            content: url(/public/img/SVG/heart.svg);
-        }    
-        
-        
-        
     }
-
 }
+.heart{
+    margin-right: 2em;
+    position: relative;
+}
+
+.heart::after{
+        content: "";
+        position: absolute;
+        top: 16px;
+        right: 0px;
+        background-color: $color-primary;
+        width: 100%;
+        height: 100%;
+        transition: all 300ms;   
+    }
+.heart:hover::after{
+    top: 0px;
+}
+
+
