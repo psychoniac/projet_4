@@ -37,17 +37,13 @@
         }
         &-icon1 {
             color: $color-primary;
-            margin-right: 2em;
-            &:hover{
-                visibility: hidden;
-            }
-            &:hover +.card__bottom-icon2{
-                visibility: visible;
-            }
         }
-        &-icon2{
-            visibility: hidden;
-        }
+        &-icon1::after{
+            content: url(/public/img/SVG/heart.svg);
+        }    
+        
+        
+        
     }
 
 }

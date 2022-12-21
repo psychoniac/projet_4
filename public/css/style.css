@@ -136,16 +136,9 @@ header {
 }
 .card__bottom-icon1 {
   color: #9356DC;
-  margin-right: 2em;
 }
-.card__bottom-icon1:hover {
-  visibility: hidden;
-}
-.card__bottom-icon1:hover + .card__bottom-icon2 {
-  visibility: visible;
-}
-.card__bottom-icon2 {
-  visibility: hidden;
+.card__bottom-icon1::after {
+  content: url(/public/img/SVG/heart.svg);
 }
 
 .restaurant {
