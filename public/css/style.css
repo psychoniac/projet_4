@@ -50,24 +50,29 @@ header {
 
 .header__logo {
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-.localisation {
+.form_localisation {
   min-width: 100%;
-  padding-right: 5em;
-  background-color: #EAEAEA;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding-left: 1em;
 }
-.localisation i {
+.form_localisation i {
   width: 10%;
   padding: 1em;
   text-align: center;
 }
-.localisation p {
+.form_localisation #localisation {
+  border: none;
+  background-color: #EAEAEA;
+  font-family: "Roboto";
+  font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 18.75px;
 }
 
 .btn {
