@@ -1,0 +1,26 @@
+.restaurant{
+    display:flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+
+    
+}
+.restaurant__title{
+    font-family: $font-txt;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-left: 1em;
+    
+
+}
+.card_contener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+
+}
