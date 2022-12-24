@@ -35,11 +35,11 @@
         border-radius: 25px;
         transform: scale(1);
         transition-property: transform;
-        transition-duration: 1600ms;
+        transition-duration: 300ms;
 
         &:hover {
             background-color: #F5EDFF;
-            transform: scale(0.5);
+            transform: scale(1.2);
         }
 
         & i {
