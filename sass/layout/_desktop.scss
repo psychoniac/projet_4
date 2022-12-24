@@ -11,14 +11,6 @@
     .presentation{
         background-color: #f5edff;
     }
-    .functioning{
-        flex-direction: row;
-        justify-content: space-around;
-        &__item{
-            min-width: 300px;
-            
-        }
-    }
    .card_contener{
     flex-direction: row;
     justify-content: space-evenly;

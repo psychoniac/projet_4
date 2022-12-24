@@ -28,6 +28,11 @@ a {
   font-weight: 500;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .contener {
   display: flex;
   flex-direction: column;
@@ -253,15 +258,6 @@ header {
   text-align: center;
 }
 
-.functioning__title {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: "Roboto";
-  padding-top: 2em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-
 .functioning {
   display: flex;
   flex-direction: column;
@@ -269,11 +265,28 @@ header {
   gap: 1em;
   margin-bottom: 3em;
 }
-.functioning__item {
+.functioning__title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.functioning__contener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.functioning__contener--item {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #F5EDFF;
-  min-width: 85%;
+  width: 80%;
+  max-width: 90%;
   height: 60px;
   padding: 5px;
   border-radius: 25px;
@@ -281,17 +294,18 @@ header {
   transition-property: transform;
   transition-duration: 1600ms;
 }
-.functioning__item:hover {
+.functioning__contener--item:hover {
   background-color: #F5EDFF;
   transform: scale(0.5);
 }
-.functioning__item i {
+.functioning__contener--item i {
   padding-left: 2em;
 }
-.functioning__item p {
+.functioning__contener--item p {
   padding-left: 2em;
 }
-.functioning__icon-svg {
+
+.icon-svg {
   position: relative;
   top: 0;
   left: -1em;
@@ -337,13 +351,6 @@ footer h2 {
   }
   .presentation {
     background-color: #f5edff;
-  }
-  .functioning {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .functioning__item {
-    min-width: 300px;
   }
   .card_contener {
     flex-direction: row;
