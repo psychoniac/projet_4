@@ -36,28 +36,30 @@
     }
 }
 
-.heart{
-    margin-right: 2em;
+.card__bottom-icon{
+    width: 22px;
+    height: 22px;
     position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.heart::after{
-        content: "";
-        position: absolute;
-        top: 16px;
-        right: 0px;
-        background-color: $color-primary;
-        padding: 1em;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        transition: all 600ms;
-           
+    
+    &--nocolor{
+        opacity: 1;
+        
     }
-.heart:hover::after{
-    top: 0px;
+    &::after{
+            content: url(/public/img/svg/heart_gradient.svg);
+            opacity: 0;
+            position: absolute;
+            left: 0;
+                }
+            }
+.card__bottom-icon:hover{
+    &--nocolor{
+        opacity: 0;
+    }
+    
+    &::after{
+        opacity: 1;
+    }
 }
 
 
