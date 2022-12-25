@@ -40,6 +40,7 @@ ul {
   font-family: "Roboto";
   font-size: 16px;
   color: #000;
+  min-width: 375px;
 }
 
 header {
@@ -108,8 +109,8 @@ header {
   height: 3em;
   border: none;
   border-radius: 25px;
-  background-color: white;
-  color: #9356DC;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, 0, 1, 0, 0);
   font-family: "Roboto";
@@ -118,10 +119,10 @@ header {
   line-height: 19px;
 }
 .btn:hover {
-  color: white;
+  color: #9356DC;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: white;
 }
 
 .card {
@@ -161,24 +162,21 @@ header {
 }
 
 .card__bottom-icon {
+  margin-right: 1em;
   width: 22px;
   height: 22px;
   position: relative;
-}
-.card__bottom-icon--nocolor {
-  opacity: 1;
 }
 .card__bottom-icon::after {
   content: url(/public/img/svg/heart_gradient.svg);
   opacity: 0;
   position: absolute;
   left: 0;
-}
-
-.card__bottom-icon:hover--nocolor {
-  opacity: 0;
+  transform: scale(1);
+  transition: all 500ms;
 }
 .card__bottom-icon:hover::after {
+  transform: scale(1.2);
   opacity: 1;
 }
 
@@ -281,6 +279,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 1em;
 }
 .functioning__contener--item {
   display: flex;
@@ -292,13 +291,9 @@ header {
   height: 60px;
   padding: 5px;
   border-radius: 25px;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 300ms;
 }
 .functioning__contener--item:hover {
   background-color: #F5EDFF;
-  transform: scale(1.2);
 }
 .functioning__contener--item i {
   padding-left: 2em;
@@ -354,24 +349,45 @@ footer h2 {
   .presentation {
     background-color: #f5edff;
   }
+  .presentation__content1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .functioning__title {
+    padding-left: 17em;
+  }
+  .functioning__contener {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .functioning__contener--item {
+    width: 335px;
+  }
+  .icon-svg {
+    left: -1.5em;
+  }
+  .restaurant {
+    position: relative;
+    left: 6em;
+  }
+  .restaurant__title {
+    padding-left: 4.5em;
+  }
   .card_contener {
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .btn {
-    background-color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    justify-content: right;
   }
   footer {
     flex-direction: row;
-    padding-left: 10em;
+    justify-content: center;
+    gap: 20px;
+    height: 115px;
+    position: relative;
   }
   footer h2 {
-    position: relative;
-    top: 5%;
-    left: 80%;
-  }
-  .footer__item {
-    padding-right: 1em;
+    position: absolute;
+    right: 16em;
+    top: 1.5em;
   }
 }
 

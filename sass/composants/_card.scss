@@ -37,29 +37,26 @@
 }
 
 .card__bottom-icon{
+    margin-right: 1em;
     width: 22px;
     height: 22px;
     position: relative;
     
-    &--nocolor{
-        opacity: 1;
-        
-    }
+    
+    
     &::after{
             content: url(/public/img/svg/heart_gradient.svg);
             opacity: 0;
             position: absolute;
             left: 0;
+            transform: scale(1);
+            transition: all 500ms;
                 }
+            &:hover::after{
+                transform: scale(1.2);
+                opacity: 1;        
             }
-.card__bottom-icon:hover{
-    &--nocolor{
-        opacity: 0;
-    }
-    
-    &::after{
-        opacity: 1;
-    }
-}
+            }
+
 
 

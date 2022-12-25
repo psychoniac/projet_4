@@ -10,24 +10,49 @@
     }
     .presentation{
         background-color: #f5edff;
+        &__content1{
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+    .functioning__title{
+        padding-left: 17em;
+    }
+    .functioning__contener{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .functioning__contener--item{
+        width: 335px;
+    }
+    .icon-svg{
+        left: -1.5em;
+    }
+    .restaurant{
+        position: relative;
+        left: 6em;
+        &__title{
+            padding-left: 4.5em;
+        }
     }
    .card_contener{
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
    }
-    .btn {
-        background-color: linear-gradient(200.64deg,#9356DC -5.2%, #FF79DA 110.74%);
-}
+    
+
 footer{
     flex-direction: row;
-    padding-left:10em;
+    justify-content: center;
+    gap: 20px;
+    height: 115px;
+    position: relative;
     & h2{
-        position: relative;
-        top: 5%;
-        left: 80%;
-    }}
-    .footer__item{
-        padding-right:1em;
+        position: absolute;
+        right: 16em;
+        top:1.5em;
     }
+    
 
+}
 }

@@ -6,8 +6,8 @@
     height: 3em;
     border: none;
     border-radius: 25px;
-    background-color: #FFFF;
-    color: #9356DC;
+    background: linear-gradient(200.64deg,#9356DC -5.2%, #FF79DA 110.74%);
+    color: white;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     transform: matrix(1, 0, 0, 1,0 ,0);
     font-family: $font-txt;
@@ -18,10 +18,10 @@
 
 
     &:hover {
-        color: #FFFF;
+        color:#9356DC;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         transform: matrix(1, 0, 0, 1, 0, 0);
-        background: linear-gradient(200.64deg,#9356DC -5.2%, #FF79DA 110.74%);
+        background:#FFFF ;
     }
    
 }
