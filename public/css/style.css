@@ -36,11 +36,13 @@ ul {
 .contener {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   font-family: "Roboto";
   font-size: 16px;
   color: #000;
   min-width: 375px;
+  width: 100%;
+  overflow: overlay;
 }
 
 header {
