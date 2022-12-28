@@ -2,7 +2,8 @@
 @import "./utils/mixin";
 @import "./utils/animation";
 @import "./base/reset";
-@import"./layout/contener";
+@import "./composants/loader";
+@import "./layout/contener";
 @import "./layout/header";
 @import "./pages/restaurant";
 @import "./composants/button";
@@ -11,4 +12,4 @@
 @import "./pages/presentation";
 @import "./pages/functioning";
 @import "./layout/footer";
-@import"./layout/desktop";
+@import "./layout/desktop";

@@ -46,6 +46,26 @@ input:active {
   border: 0;
 }
 
+.contener__loader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contener__loader--text {
+  font-family: "Shrikhand";
+  font-size: xx-large;
+  color: #9356DC;
+  border: 4mm ridge #FF79DA;
+  padding: 3em;
+  border-radius: 50%;
+}
+
 .contener {
   display: flex;
   flex-direction: column;
