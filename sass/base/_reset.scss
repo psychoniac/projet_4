@@ -1,30 +1,41 @@
 body {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  max-width: 100vw;
 }
 
 p {
-    margin: 0%;
+  margin: 0%;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    font-family: $font-txt;
-    font-size: 16px;
-    font-weight: 500;
-
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: $font-txt;
+  font-size: 16px;
+  font-weight: 500;
 }
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: 0;
+  &:focus-visible {
+    outline: none;
+  }
+  &:hover {
+    border: 0;
+  }
+  &:active {
+    border: 0;
+  }
 }

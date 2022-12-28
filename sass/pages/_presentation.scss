@@ -1,25 +1,23 @@
 .presentation {
-    background-color: #fbfbfb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    padding: 2em 0 2em 0;
-    font-family: $font-txt;
+  background-color: #e3e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 0 2em 0;
+  font-family: $font-txt;
 
-    &__content1 {
-        width: 70%;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 28.13px;
-    }
+  &__content1 {
+    width: 70%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28.13px;
+  }
 
-    &__content2 {
-        font-size: 18px;
-        font-weight: 300;
-        text-align: center;
-
-
-    }
+  &__content2 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
 }
