@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: anim_loader 3000ms 2000ms linear both;
 
   &--text {
     font-family: $font-title;

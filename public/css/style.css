@@ -2,6 +2,14 @@
 /*Liste des couleurs*/
 /*Liste des polices d'écriture*/
 /*Regle pour le responsive*/
+@keyframes anim_loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -56,6 +64,7 @@ input:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: anim_loader 3000ms 2000ms linear both;
 }
 .contener__loader--text {
   font-family: "Shrikhand";
