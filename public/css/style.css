@@ -24,6 +24,16 @@
     animation-timing-function: linear;
   }
 }
+@keyframes anim_itemplat {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -283,6 +293,7 @@ header {
 }
 
 .menu__plats--item {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -290,6 +301,24 @@ header {
   height: 70px;
   background: white;
   border-radius: 25px;
+}
+.menu__plats--item::after {
+  content: url(/public/img/svg/encoche.svg);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(158, 227, 158);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.menu__plats--item:active::after {
+  animation: anim_itemplat 200ms linear both;
 }
 
 .presentation {
