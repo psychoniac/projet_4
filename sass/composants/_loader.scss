@@ -17,5 +17,6 @@
     border: 4mm ridge $color-secondary;
     padding: 3em;
     border-radius: 50%;
+    animation: anim_textloader 1500ms linear both;
   }
 }

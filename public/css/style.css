@@ -10,6 +10,14 @@
     transform: scale(0);
   }
 }
+@keyframes anim_textloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -73,6 +81,7 @@ input:active {
   border: 4mm ridge #FF79DA;
   padding: 3em;
   border-radius: 50%;
+  animation: anim_textloader 1500ms linear both;
 }
 
 .contener {
