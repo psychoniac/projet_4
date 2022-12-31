@@ -1,39 +1,65 @@
 .contener_principal {
   min-width: 375px;
   background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurants__header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  & img {
+  align-items: center;
+  max-width: 100%;
+  &--icon {
     max-width: 200px;
   }
+  &--logo {
+    width: 162px;
+    height: 44px;
+  }
 }
-.img_hero {
-  width: 100%;
+.hero {
+  width: 375px;
   height: 275px;
-  object-fit: cover;
 }
-.menu {
+.contener__menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
   top: -50px;
   background-color: #f7f7f7;
   padding-top: 3em;
-  padding-left: 1em;
-}
-.menu__title {
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
+  &__title {
+    display: flex;
+    justify-content: space-around;
+    &--title {
+      font-size: 28px;
+      font-weight: 400;
+      font-style: italic;
+      font-family: $font-title;
+      line-height: 41px;
+    }
+    &--icon {
+      width: 22px;
+      height: 21px;
+    }
+  }
 }
 .menu__plats {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -41,16 +67,27 @@
 .menu__plats--item {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  max-width: 80%;
+  width: 350px;
   height: 70px;
   background: white;
   border-radius: 25px;
-  & h3 {
-    text-overflow: ellipsis;
-    overflow: hidden;
+  &_txt {
+    display: flex;
+    flex-direction: column;
   }
+  & h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: $font-txt;
+  }
+  & span {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: $font-txt;
+  }
+
   &::after {
     content: url(/public/img/svg/encoche.svg);
     position: absolute;
@@ -61,10 +98,9 @@
     opacity: 0;
     text-overflow: ellipsis;
     overflow: hidden;
-
     display: flex;
-    align-items: center; //
-    justify-content: center; //
+    align-items: center;
+    justify-content: center;
     background-color: rgb(158, 227, 158);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -72,4 +108,7 @@
   &:active::after {
     animation: anim_itemplat 200ms linear both;
   }
+}
+footer {
+  width: 100%;
 }
