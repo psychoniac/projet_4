@@ -302,6 +302,10 @@ header {
   background: white;
   border-radius: 25px;
 }
+.menu__plats--item h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .menu__plats--item::after {
   content: url(/public/img/svg/encoche.svg);
   position: absolute;
@@ -310,6 +314,8 @@ header {
   width: 100px;
   height: 100%;
   opacity: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
