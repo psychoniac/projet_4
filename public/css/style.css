@@ -266,7 +266,7 @@ header {
   position: relative;
 }
 .card__bottom-icon::after {
-  content: url(/public/img/svg/heart_gradient.svg);
+  content: url(/public/img/icon_svg/heart_gradient.svg);
   opacity: 0;
   position: absolute;
   left: 0;
@@ -372,7 +372,7 @@ header {
   font-family: "Roboto";
 }
 .menu__plats--item::after {
-  content: url(/public/img/svg/encoche.svg);
+  content: url(/public/img/icon_svg/encoche.svg);
   position: absolute;
   top: 0px;
   right: 0px;
