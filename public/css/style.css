@@ -26,12 +26,10 @@
 }
 @keyframes anim_itemplat {
   0% {
-    opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(0px);
   }
   100% {
-    opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(-100px);
   }
 }
 body {
@@ -376,12 +374,10 @@ header {
   content: url(/public/img/icon_svg/encoche.svg);
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: -100px;
   width: 100px;
   height: 100%;
   opacity: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -390,7 +386,11 @@ header {
   border-bottom-right-radius: 25px;
 }
 .menu__plats--item:active::after {
-  animation: anim_itemplat 200ms linear both;
+  animation: anim_itemplat;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 1;
 }
 
 footer {
@@ -455,7 +455,7 @@ footer {
   padding: 5px;
   border-radius: 25px;
 }
-.functioning__contener--item:hover {
+.functioning__contener--item:active {
   background-color: rgb(245, 237, 255);
 }
 .functioning__contener--item i {
@@ -534,6 +534,9 @@ footer h2 {
   }
   .functioning__contener--item {
     width: 335px;
+  }
+  .functioning__contener--item:hover {
+    background-color: rgb(245, 237, 255);
   }
   .icon-svg {
     left: -1.5em;

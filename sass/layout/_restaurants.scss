@@ -92,12 +92,10 @@
     content: url(/public/img/icon_svg/encoche.svg);
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -100px;
     width: 100px;
     height: 100%;
     opacity: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +104,11 @@
     border-bottom-right-radius: 25px;
   }
   &:active::after {
-    animation: anim_itemplat 200ms linear both;
+    animation: anim_itemplat;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
   }
 }
 footer {
