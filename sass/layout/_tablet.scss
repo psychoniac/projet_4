@@ -1,10 +1,13 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 968px) and (max-width: 1224px) {
   .functioning__contener {
+    max-width: 80%;
+    min-width: 50%;
+    margin: auto;
     flex-wrap: wrap;
     &--item {
-      width: 50%;
-      max-width: 30%;
-      min-width: 45%;
+      width: 70%;
+      max-width: 80%;
+      min-width: 50%;
     }
   }
 }

@@ -30,7 +30,9 @@
   }
   .functioning__contener {
     flex-direction: row;
-    width: auto;
+    max-width: 90%;
+    min-width: 60%;
+    width: 80%;
     &--item {
       width: 335px;
       &:hover {
