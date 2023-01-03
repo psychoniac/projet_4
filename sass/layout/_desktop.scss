@@ -53,11 +53,10 @@
   }
   .card__bottom-icon {
     &::after {
-      transform: scale(1);
+      opacity: 0;
       transition: all 200ms;
     }
     &:hover::after {
-      transform: scale(1.2);
       opacity: 1;
     }
   }
