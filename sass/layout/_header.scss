@@ -9,6 +9,9 @@ header {
 .header__logo {
   padding-top: 1em;
   padding-bottom: 1em;
+  & img {
+    width: 162px;
+  }
 }
 .form_localisation {
   min-width: 100%;

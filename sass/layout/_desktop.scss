@@ -1,4 +1,7 @@
 @media screen and (min-width: 960px) {
+  .contener {
+    overflow: scroll;
+  }
   .localisation {
     height: 50px;
   }
@@ -47,7 +50,6 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 6em;
-    overflow: hidden;
   }
   .card__bottom-icon {
     &::after {
