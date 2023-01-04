@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: anim_loader 3000ms 5000ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
+  animation: anim_loader 1000ms 3000ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
 
   &--text {
     background-color: purple;

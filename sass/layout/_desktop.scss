@@ -1,7 +1,4 @@
-@media screen and (min-width: 960px) {
-  .contener {
-    overflow: scroll;
-  }
+@media screen and (min-width: 1225px) {
   .localisation {
     height: 50px;
   }
@@ -69,14 +66,17 @@
 
   footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
     height: 115px;
-    position: relative;
     & h2 {
-      position: absolute;
-      right: 16em;
-      top: 1.5em;
+      padding-top: 0%;
+    }
+
+    & :nth-child(1) {
+      order: 5;
     }
   }
+  /*Pour les pages restaurants*/
 }
