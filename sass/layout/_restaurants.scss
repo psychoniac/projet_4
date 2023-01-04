@@ -102,9 +102,12 @@
     background-color: rgb(158, 227, 158);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    transform: translateX(0px);
+    transition: all 300ms;
   }
   &:active::after {
-    animation: anim_itemplat;
+    transform: translateX(-100px);
+    opacity: 1;
   }
 }
 footer {

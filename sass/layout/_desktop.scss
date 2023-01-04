@@ -34,7 +34,8 @@
     min-width: 60%;
     width: 80%;
     &--item {
-      width: 335px;
+      min-width: 30%;
+      max-width: 40%;
       &:hover {
         background-color: rgba(245, 237, 255, 1);
       }
