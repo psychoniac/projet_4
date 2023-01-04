@@ -164,7 +164,9 @@ header {
 
 .restaurant {
   display: flex;
+  min-width: 80%;
   flex-direction: column;
+  align-items: center;
   padding: 1em 0 1em 0;
 }
 .restaurant__title {
@@ -176,6 +178,7 @@ header {
 }
 
 .card_contener {
+  min-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,7 +397,10 @@ header {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   transform: translateX(0px);
-  transition: all 200ms;
+  transition-property: transform, opacity;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s, 0s;
 }
 .menu__plats--item:active::after {
   transform: translateX(-100px);
@@ -569,10 +575,11 @@ footer h2 {
   }
   footer {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     height: 115px;
+    padding-left: 0%;
   }
   footer h2 {
     padding-top: 0%;
@@ -581,6 +588,10 @@ footer h2 {
     order: 5;
   }
   /*Pour les pages restaurants*/
+  .menu__plats--item:hover::after {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1224px) {
   .functioning__contener {

@@ -5,29 +5,35 @@
   flex-direction: column;
   align-items: center;
 }
+
 .restaurants__header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5em;
+
   &--icon {
     max-width: 200px;
   }
+
   &--logo {
     width: 162px;
     height: 44px;
   }
 }
+
 .hero {
   width: 375px;
   height: 275px;
 }
+
 .contener__menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .menu {
   width: 100%;
   display: flex;
@@ -39,10 +45,12 @@
   top: -50px;
   background-color: #f7f7f7;
   padding-top: 3em;
+
   &__title {
     width: 100%;
     display: flex;
     justify-content: space-around;
+
     &--title {
       font-size: 28px;
       font-weight: 400;
@@ -50,12 +58,14 @@
       font-family: $font-title;
       line-height: 41px;
     }
+
     &--icon {
       width: 22px;
       height: 21px;
     }
   }
 }
+
 .menu__plats {
   min-width: 80%;
   display: flex;
@@ -65,6 +75,7 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 .menu__plats--item {
   position: relative;
   display: flex;
@@ -75,15 +86,18 @@
   background: white;
   border-radius: 25px;
   padding: 5px;
+
   &_txt {
     display: flex;
     flex-direction: column;
   }
+
   & h3 {
     font-size: 18px;
     font-weight: 500;
     font-family: $font-txt;
   }
+
   & span {
     font-size: 15px;
     font-weight: 300;
@@ -105,10 +119,15 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     transform: translateX(0px);
-    transition: all 200ms;
+    transition-property: transform, opacity;
+    transition-duration: 1s, 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s, 0s;
   }
+
   &:active::after {
     transform: translateX(-100px);
     opacity: 1;
   }
+
 }
