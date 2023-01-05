@@ -118,16 +118,15 @@
     background-color: rgb(158, 227, 158);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    transform: translateX(0px);
-    transition-property: transform, opacity;
-    transition-duration: 1s, 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s, 0s;
   }
 
   &:active::after {
-    transform: translateX(-100px);
-    opacity: 1;
+    animation-name: anim_itemplat;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 1ms;
+    animation-direction: normal;
+    animation-fill-mode: both;
   }
 
 }

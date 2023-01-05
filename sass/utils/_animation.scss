@@ -2,6 +2,7 @@
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0);
   }
@@ -12,27 +13,29 @@
     transform: rotate(0deg);
     animation-timing-function: linear;
   }
+
   50% {
     transform: rotate(180deg);
     animation-timing-function: linear;
   }
+
   100% {
     transform: rotate(360deg);
     animation-timing-function: linear;
   }
 }
-/*@keyframes anim_itemplat {
+
+@keyframes anim_itemplat {
   0% {
-    transform: translateX(0px);
+    transform: translate(0px);
     opacity: 0;
   }
-  50% {
-    transform: translate(-100px);
-    animation-timing-function: 1s;
-  }
+
+
+
   100% {
-    transform: translateX(-100px);
+    transform: translate(-100px);
     opacity: 1;
-    animation-timing-function: ms;
+
   }
-}*/
+}

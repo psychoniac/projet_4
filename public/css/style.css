@@ -24,21 +24,16 @@
     animation-timing-function: linear;
   }
 }
-/*@keyframes anim_itemplat {
+@keyframes anim_itemplat {
   0% {
-    transform: translateX(0px);
+    transform: translate(0px);
     opacity: 0;
   }
-  50% {
-    transform: translate(-100px);
-    animation-timing-function: 1s;
-  }
   100% {
-    transform: translateX(-100px);
+    transform: translate(-100px);
     opacity: 1;
-    animation-timing-function: ms;
   }
-}*/
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -396,15 +391,14 @@ header {
   background-color: rgb(158, 227, 158);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  transform: translateX(0px);
-  transition-property: transform, opacity;
-  transition-duration: 1s, 1s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s, 0s;
 }
 .menu__plats--item:active::after {
-  transform: translateX(-100px);
-  opacity: 1;
+  animation-name: anim_itemplat;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 1ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
 }
 
 .presentation {
@@ -588,9 +582,16 @@ footer h2 {
     order: 5;
   }
   /*Pour les pages restaurants*/
+  .menu__plats--item {
+    text-overflow: "...";
+  }
   .menu__plats--item:hover::after {
-    transform: translateX(-100px);
-    opacity: 1;
+    animation-name: anim_itemplat;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 1ms;
+    animation-direction: normal;
+    animation-fill-mode: both;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1224px) {
