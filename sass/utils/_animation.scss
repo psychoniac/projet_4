@@ -1,3 +1,4 @@
+//loader//
 @keyframes anim_loader {
   0% {
     transform: scale(1);
@@ -25,17 +26,18 @@
   }
 }
 
-@keyframes anim_itemplat {
+//animations pour faire apparaitre les differents des pages menu//
+@keyframes translate_entrees {
   0% {
     transform: translate(0px);
-    opacity: 0;
   }
 
 
 
   100% {
-    transform: translate(-100px);
+    transform: translate(100px);
     opacity: 1;
 
   }
+
 }

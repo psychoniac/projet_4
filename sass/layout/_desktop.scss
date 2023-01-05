@@ -96,8 +96,34 @@
   }
 
   /*Pour les pages restaurants*/
+  .contener_principal {
+    align-items: normal;
+    position: relative;
+  }
+
+  .contener__menu {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100vw;
+    height: 1056px;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .menu {
+
+    height: 100%;
+    max-width: 80%;
+    padding-bottom: 3em;
+    z-index: 2;
+  }
+
   .menu__plats--item {
     text-overflow: "...";
+    width: 80%;
+    position: relative;
 
     &:hover::after {
       animation-name: anim_itemplat;
@@ -107,5 +133,9 @@
       animation-direction: normal;
       animation-fill-mode: both;
     }
+  }
+
+  .btn {
+    margin-top: 1em;
   }
 }
