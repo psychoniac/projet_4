@@ -5,9 +5,7 @@
   opacity: 0.8;
   position: fixed;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include row_contener;
   animation: anim_loader 1000ms 3000ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
 
   &--text {

@@ -1,19 +1,14 @@
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include row_contener;
+  @include style_txt;
   width: 215px;
   height: 3em;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: $gradient;
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  font-family: $font-txt;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
 
   &:active {
     color: #9356dc;

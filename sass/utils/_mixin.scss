@@ -10,3 +10,11 @@
     justify-content: center;
     align-items: center;
 }
+
+/*style de la police pour les textes*/
+@mixin style_txt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    font-family: $font-txt;
+}

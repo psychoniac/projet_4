@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Liste des couleurs*/
 /*Liste des polices d'écriture*/
-/*Regle pour le responsive*/
+/*style de la police pour les textes*/
 @keyframes anim_loader {
   0% {
     transform: scale(1);
@@ -71,12 +71,6 @@ input {
 input:focus-visible {
   outline: none;
 }
-input:hover {
-  border: 0;
-}
-input:active {
-  border: 0;
-}
 
 button {
   background-color: transparent;
@@ -91,8 +85,8 @@ button {
   position: fixed;
   z-index: 2;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   animation: anim_loader 1000ms 3000ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 .contener__loader--text {
@@ -183,8 +177,12 @@ header {
 
 .btn {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: "Roboto";
   width: 215px;
   height: 3em;
   border: none;
@@ -193,10 +191,6 @@ header {
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
 }
 .btn:active {
   color: #9356dc;
@@ -226,8 +220,8 @@ header {
   width: 80px;
   height: 29px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 20px;
   left: 250px;

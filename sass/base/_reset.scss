@@ -24,22 +24,21 @@ a {
   font-size: 16px;
   font-weight: 500;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 input {
   border: 0;
+
   &:focus-visible {
     outline: none;
   }
-  &:hover {
-    border: 0;
-  }
-  &:active {
-    border: 0;
-  }
+
 }
+
 button {
   background-color: transparent;
   border: none;
