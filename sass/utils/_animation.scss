@@ -29,13 +29,43 @@
 //animations pour faire apparaitre les differents des pages menu//
 @keyframes translate_entrees {
   0% {
-    transform: translate(0px);
+    transform: translate(-50px);
   }
 
 
 
   100% {
-    transform: translate(100px);
+    transform: translate(0px);
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes translate_plats {
+  0% {
+    transform: translate(-50px);
+  }
+
+
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes translate_desserts {
+  0% {
+    transform: translate(-50px);
+  }
+
+
+
+  100% {
+    transform: translate(0px);
     opacity: 1;
 
   }

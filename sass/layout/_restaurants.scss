@@ -45,7 +45,7 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
-  top: 20em;
+  top: -10em;
   background-color: #f7f7f7;
 
 
@@ -143,6 +143,29 @@
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   animation-delay: 0.1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.plats {
+  opacity: 0;
+  animation-name: translate_plats;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+}
+
+.desserts {
+  opacity: 0;
+  animation-name: translate_desserts;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-delay: 2s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }

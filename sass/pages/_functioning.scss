@@ -4,15 +4,17 @@
   align-items: center;
   gap: 1em;
   margin-bottom: 3em;
+
   &__title {
     width: 100%;
     font-size: 24px;
     font-weight: 700;
     font-family: $font-txt;
     padding-top: 2em;
-    padding-left: 1em;
     padding-bottom: 1em;
+    padding-left: 1em;
   }
+
   &__contener {
     display: flex;
     flex-direction: column;
@@ -47,6 +49,7 @@
     }
   }
 }
+
 .icon-svg {
   position: relative;
   top: 0;
