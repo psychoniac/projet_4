@@ -4,8 +4,6 @@
   background-color: rgb(237, 237, 237);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
 }
 
 .restaurants__header {
@@ -26,15 +24,14 @@
 }
 
 .hero {
-  width: 375px;
-  height: 275px;
+  width: 100%;
 
+  height: 275px;
 }
 
 .contener__menu {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -66,9 +63,14 @@
     &--icon {
       width: 22px;
       height: 21px;
+
+
     }
   }
+
 }
+
+
 
 .menu__plats {
   min-width: 80%;
@@ -127,14 +129,12 @@
 
   &:active::after {
     animation-name: anim_itemplat;
-    animation-duration: 1.5s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-delay: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
     animation-direction: normal;
     animation-fill-mode: both;
   }
-
-
 }
 
 //class entrees, plats, dessert pour faire apparaitre les plats petit à petit//
@@ -158,7 +158,6 @@
   animation-delay: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
-
 }
 
 .desserts {

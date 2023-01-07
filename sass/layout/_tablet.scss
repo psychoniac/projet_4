@@ -26,4 +26,17 @@
   }
 
   /*Pour les pages restaurants*/
+  .restaurants__header {
+    justify-content: space-around;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .menu__plats {
+    align-items: center;
+  }
 }
