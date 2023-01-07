@@ -1,5 +1,6 @@
 .contener_principal {
   min-width: 375px;
+  width: 100%;
   background-color: rgb(237, 237, 237);
   display: flex;
   flex-direction: column;
@@ -82,7 +83,6 @@
 .menu__plats--item {
 
   display: flex;
-  text-overflow: ellipsis;
   align-items: center;
   width: 80%;
   height: 70px;
@@ -93,12 +93,14 @@
   &_txt {
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
   }
 
   & h3 {
     font-size: 18px;
     font-weight: 500;
     font-family: $font-txt;
+    text-overflow: ellipsis;
   }
 
   & span {
