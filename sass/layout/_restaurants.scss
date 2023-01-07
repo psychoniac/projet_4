@@ -73,7 +73,7 @@
   min-width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   gap: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -82,9 +82,9 @@
 .menu__plats--item {
 
   display: flex;
-  justify-content: space-between;
+  text-overflow: ellipsis;
   align-items: center;
-  width: 350px;
+  width: 80%;
   height: 70px;
   background: white;
   border-radius: 25px;
@@ -111,7 +111,7 @@
     content: url(/public/img/icon_svg/encoche.svg);
     position: absolute;
     top: 0px;
-    right: -100px;
+    right: -60px;
     width: 100px;
     height: 100%;
     opacity: 0;
@@ -125,9 +125,9 @@
 
   &:active::after {
     animation-name: anim_itemplat;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-delay: 1ms;
+    animation-delay: 0;
     animation-direction: normal;
     animation-fill-mode: both;
   }
