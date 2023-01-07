@@ -95,16 +95,6 @@ button {
     opacity: 1;
   }
 }
-@keyframes anim_itemplat {
-  0% {
-    transform: translateX(0px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-60px);
-    opacity: 1;
-  }
-}
 .contener__loader {
   width: 100%;
   height: 100vh;
@@ -484,11 +474,57 @@ footer h2 {
   background: white;
   border-radius: 25px;
   padding: 5px;
+  /*
+    &:active+.menu__plats--item_select {
+      animation-name: anim_itemplat;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.2s;
+      animation-direction: normal;
+      animation-fill-mode: both;
+
+    }
+  */
+  /*
+  &::after {
+    content: url(/public/img/icon_svg/encoche.svg);
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 100px;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 227, 158);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  &:active::after {
+    animation-name: anim_itemplat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+  }*/
 }
 .menu__plats--item_txt {
   display: flex;
   flex-direction: column;
   text-overflow: ellipsis;
+}
+.menu__plats--item_select {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(158, 227, 158);
+  transform: translateX(0px);
+  transition: all 200ms;
+}
+.menu__plats--item:active + .menu__plats--item_select {
+  transform: translateX(100px);
 }
 .menu__plats--item h3 {
   font-size: 18px;
@@ -500,29 +536,6 @@ footer h2 {
   font-size: 15px;
   font-weight: 300;
   font-family: "Roboto";
-}
-.menu__plats--item::after {
-  content: url(/public/img/icon_svg/encoche.svg);
-  position: absolute;
-  top: 0px;
-  right: -60px;
-  width: 100px;
-  height: 100%;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(158, 227, 158);
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-.menu__plats--item:active::after {
-  animation-name: anim_itemplat;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.2s;
-  animation-direction: normal;
-  animation-fill-mode: both;
 }
 
 .entrees {
@@ -636,7 +649,6 @@ footer h2 {
   /*Pour les pages restaurants*/
   .contener_principal {
     align-items: normal;
-    position: absolute;
   }
   .restaurants__header {
     justify-content: space-around;
@@ -647,8 +659,8 @@ footer h2 {
   }
   .hero {
     min-width: 100%;
-    height: 1056px;
-    position: static;
+    height: 800px;
+    object-fit: fill;
   }
   .menu {
     max-width: 80%;

@@ -98,6 +98,32 @@
     text-overflow: ellipsis;
   }
 
+  &_select {
+
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(158, 227, 158);
+    transform: translateX(0px);
+    transition: all 200ms;
+
+  }
+
+  &:active+.menu__plats--item_select {
+    transform: translateX(100px);
+  }
+
+  /*
+  &:active+.menu__plats--item_select {
+    animation-name: anim_itemplat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+  }
+*/
   & h3 {
     font-size: 18px;
     font-weight: 500;
@@ -111,6 +137,7 @@
     font-family: $font-txt;
   }
 
+  /*
   &::after {
     content: url(/public/img/icon_svg/encoche.svg);
     position: absolute;
@@ -134,7 +161,7 @@
     animation-delay: 0.2s;
     animation-direction: normal;
     animation-fill-mode: both;
-  }
+  }*/
 }
 
 //class entrees, plats, dessert pour faire apparaitre les plats petit à petit//

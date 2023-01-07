@@ -98,7 +98,7 @@
   /*Pour les pages restaurants*/
   .contener_principal {
     align-items: normal;
-    position: absolute;
+
   }
 
   .restaurants__header {
@@ -110,12 +110,15 @@
   .contener__menu {
     width: 100%;
 
+
+
   }
 
   .hero {
     min-width: 100%;
-    height: 1056px;
-    position: static;
+    height: 800px;
+    object-fit: fill;
+
   }
 
   .menu {
@@ -148,4 +151,5 @@
   .btn {
     margin-top: 1em;
   }
+
 }

@@ -71,16 +71,3 @@
   }
 
 }
-
-//animations qui fait apparaitre l'encoche verte quand on selectionne un plat//
-@keyframes anim_itemplat {
-  0% {
-    transform: translateX(0px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(-60px);
-    opacity: 1;
-  }
-}
