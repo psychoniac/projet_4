@@ -12,11 +12,13 @@
     }
 
     &__contener {
-      width: 60%;
+      width: 100%;
+      flex-direction: row;
       flex-wrap: wrap;
+      padding-left: 3em;
 
       &--item {
-        width: 70%;
+
 
         & i {
           padding-right: 1em;
@@ -24,6 +26,11 @@
         }
       }
     }
+  }
+
+  .card_contener {
+    flex-direction: row;
+
   }
 
   footer {

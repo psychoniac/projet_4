@@ -220,7 +220,6 @@ header {
   margin-bottom: 3em;
 }
 .functioning__title {
-  width: 100%;
   font-size: 24px;
   font-weight: 700;
   font-family: "Roboto";
@@ -232,6 +231,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1em;
 }
 .functioning__contener--item {
@@ -239,11 +239,9 @@ header {
   align-items: center;
   background-color: rgb(234, 233, 233);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  width: 80%;
-  max-width: 90%;
-  min-width: 70%;
+  width: 320px;
   height: 60px;
-  padding: 5px;
+  padding: 2px;
   border-radius: 25px;
 }
 .functioning__contener--item i {
@@ -252,6 +250,11 @@ header {
 }
 .functioning__contener--item:active {
   background-color: rgb(245, 237, 255);
+}
+
+.icon-svg {
+  position: relative;
+  left: -1em;
 }
 
 .card {
@@ -332,7 +335,6 @@ header {
 
 .restaurant {
   display: flex;
-  min-width: 80%;
   flex-direction: column;
   align-items: center;
   padding: 1em 0 1em 0;
@@ -342,15 +344,11 @@ header {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  position: relative;
-  right: 4.5em;
 }
 
 .card_contener {
-  min-width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
   gap: 1em;
   flex-wrap: wrap;
   margin-top: 1em;
@@ -587,18 +585,12 @@ footer h2 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
-  }
-  .functioning__contener--item {
-    max-width: none;
-    min-width: 30%;
-    width: 30%;
   }
   .functioning__contener--item:hover {
     background-color: rgb(245, 237, 255);
   }
   .icon-svg {
-    left: -1.5em;
+    left: -0.5em;
   }
   .restaurant {
     background-color: #e3e1e1;
@@ -685,15 +677,17 @@ footer h2 {
     text-align: center;
   }
   .functioning__contener {
-    width: 60%;
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-  }
-  .functioning__contener--item {
-    width: 70%;
+    padding-left: 3em;
   }
   .functioning__contener--item i {
     padding-right: 1em;
     color: grey;
+  }
+  .card_contener {
+    flex-direction: row;
   }
   footer {
     flex-direction: row;
