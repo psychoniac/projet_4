@@ -25,21 +25,20 @@
     }
   }
 
-  .functioning__title {
-    width: auto;
-    position: relative;
-    right: 20em;
-  }
+
+
+
 
   .functioning__contener {
     flex-direction: row;
-    max-width: 90%;
-    min-width: 60%;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 80%;
 
     &--item {
+      max-width: none;
       min-width: 30%;
-      max-width: 40%;
+      width: 30%;
 
       &:hover {
         background-color: rgba(245, 237, 255, 1);
@@ -103,7 +102,7 @@
 
   .restaurants__header {
     justify-content: space-around;
-    padding: 1em;
+    padding-top: 1em;
 
   }
 
