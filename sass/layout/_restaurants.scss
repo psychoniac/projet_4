@@ -63,6 +63,22 @@
     &--icon {
       width: 22px;
       height: 21px;
+      position: relative;
+      transition: all 500ms;
+
+      &:active::after {
+        opacity: 1;
+      }
+
+
+      &::after {
+        content: url(/public/img/icon_svg/heart_gradient.svg);
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+        width: 22px;
+        height: 21px;
+      }
 
 
     }

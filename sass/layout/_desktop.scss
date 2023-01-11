@@ -121,6 +121,12 @@
     padding-top: 2em;
   }
 
+  .menu__title--icon {
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
   .menu__plats {
     align-items: center;
 

@@ -443,6 +443,19 @@ footer h2 {
 .menu__title--icon {
   width: 22px;
   height: 21px;
+  position: relative;
+  transition: all 500ms;
+}
+.menu__title--icon:active::after {
+  opacity: 1;
+}
+.menu__title--icon::after {
+  content: url(/public/img/icon_svg/heart_gradient.svg);
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  width: 22px;
+  height: 21px;
 }
 
 .menu__plats {
@@ -640,6 +653,9 @@ footer h2 {
     max-width: 80%;
     padding-bottom: 3em;
     padding-top: 2em;
+  }
+  .menu__title--icon:hover::after {
+    opacity: 1;
   }
   .menu__plats {
     align-items: center;
