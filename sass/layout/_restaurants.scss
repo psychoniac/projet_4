@@ -9,17 +9,20 @@
 .restaurants__header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5em;
+  padding: 1em 0 1em 0;
+
 
   &--icon {
     max-width: 200px;
+    padding-left: 2em;
   }
 
   &--logo {
     width: 162px;
     height: 44px;
+    padding-right: 2em;
   }
 }
 
@@ -51,6 +54,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     &--title {
       font-size: 28px;
@@ -102,16 +106,16 @@
 
   display: flex;
   align-items: center;
-  width: 80%;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
   height: 70px;
   background: white;
   border-radius: 25px;
-  padding: 5px;
 
   &_txt {
     display: flex;
     flex-direction: column;
-    text-overflow: ellipsis;
   }
 
   &_select {
@@ -120,26 +124,9 @@
     width: 100px;
     height: 100px;
     background-color: rgb(158, 227, 158);
-    transform: translateX(0px);
-    transition: all 200ms;
 
   }
 
-  &:active+.menu__plats--item_select {
-    transform: translateX(100px);
-  }
-
-  /*
-  &:active+.menu__plats--item_select {
-    animation-name: anim_itemplat;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.2s;
-    animation-direction: normal;
-    animation-fill-mode: both;
-
-  }
-*/
   & h3 {
     font-size: 18px;
     font-weight: 500;
@@ -152,33 +139,9 @@
     font-weight: 300;
     font-family: $font-txt;
   }
-
-  /*
-  &::after {
-    content: url(/public/img/icon_svg/encoche.svg);
-    position: absolute;
-    top: 0px;
-    right: -60px;
-    width: 100px;
-    height: 100%;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(158, 227, 158);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-  }
-
-  &:active::after {
-    animation-name: anim_itemplat;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.2s;
-    animation-direction: normal;
-    animation-fill-mode: both;
-  }*/
 }
+
+
 
 //class entrees, plats, dessert pour faire apparaitre les plats petit à petit//
 .entrees {

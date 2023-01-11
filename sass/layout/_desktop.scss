@@ -133,16 +133,6 @@
     &--item {
 
       width: 80%;
-
-
-      &:hover::after {
-        animation-name: anim_itemplat;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-delay: 1ms;
-        animation-direction: normal;
-        animation-fill-mode: both;
-      }
     }
   }
 
