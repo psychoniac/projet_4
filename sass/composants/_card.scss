@@ -40,6 +40,7 @@
     align-items: center;
     justify-content: space-between;
 
+
     &-title {
       display: flex;
       flex-direction: column;
@@ -60,23 +61,23 @@
       font-family: $font-txt;
       padding-left: 1em;
     }
-  }
-}
 
-.card__bottom-icon {
-  margin-right: 1em;
-  width: 22px;
-  height: 22px;
-  position: relative;
+    &-icon {
+      position: relative;
+      padding-right: 1em;
+      transition: opacity 250ms;
 
-  &::after {
-    content: url(../public/img/icon_svg/heart_gradient.svg);
-    opacity: 0;
-    position: absolute;
-    left: 0;
-  }
+      &:active::after {
+        opacity: 1;
+      }
+    }
 
-  &:active::after {
-    opacity: 1;
+    &-icon::after {
+      content: url(/public/img/icon_svg/heart_gradient.svg);
+      position: absolute;
+      left: 0px;
+      opacity: 0;
+
+    }
   }
 }
