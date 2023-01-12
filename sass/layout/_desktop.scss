@@ -95,7 +95,7 @@
 
   .contener__menu--hero {
     width: 100%;
-    height: 800px;
+    height: 500px;
     overflow: hidden;
     position: relative;
   }
@@ -104,7 +104,7 @@
     min-width: 100%;
     object-fit: fill;
     position: absolute;
-    top: -7em;
+    top: -20em;
   }
 
   .menu {
@@ -114,7 +114,13 @@
     top: -7em;
   }
 
+  .menu__title {
+    justify-content: center;
+  }
+
   .menu__title--icon {
+    padding-left: 2em;
+
     &:hover::after {
       opacity: 1;
     }
@@ -127,6 +133,12 @@
 
       width: 80%;
     }
+  }
+
+  .menu__plats--title {
+    width: 100%;
+    text-align: left;
+    padding-left: 6em;
   }
 
   .btn {

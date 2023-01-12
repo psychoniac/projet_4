@@ -322,6 +322,7 @@ header {
   font-weight: 300;
   font-family: "Roboto";
   padding-left: 1em;
+  color: black;
 }
 .card__bottom-icon {
   position: relative;
@@ -552,13 +553,35 @@ footer h2 {
   transform: translateX(-40px);
 }
 
+.entrees_title {
+  opacity: 0;
+  animation-name: translate_entrees;
+  animation-iteration-count: 1;
+  animation-duration: 2500ms;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-delay: 1000ms;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
 .entrees {
   opacity: 0;
   animation-name: translate_entrees;
   animation-iteration-count: 1;
-  animation-duration: 2s;
+  animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 0.1s;
+  animation-delay: 3000ms;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.plats_title {
+  opacity: 0;
+  animation-name: translate_plats;
+  animation-iteration-count: 1;
+  animation-duration: 2500ms;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-delay: 5000ms;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -567,9 +590,20 @@ footer h2 {
   opacity: 0;
   animation-name: translate_plats;
   animation-iteration-count: 1;
-  animation-duration: 2s;
+  animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 1s;
+  animation-delay: 6000ms;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desserts_title {
+  opacity: 0;
+  animation-name: translate_desserts;
+  animation-iteration-count: 1;
+  animation-duration: 2500ms;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-delay: 7000ms;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -578,9 +612,9 @@ footer h2 {
   opacity: 0;
   animation-name: translate_desserts;
   animation-iteration-count: 1;
-  animation-duration: 2s;
+  animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 2s;
+  animation-delay: 8000ms;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -656,7 +690,7 @@ footer h2 {
   }
   .contener__menu--hero {
     width: 100%;
-    height: 800px;
+    height: 500px;
     overflow: hidden;
     position: relative;
   }
@@ -664,13 +698,19 @@ footer h2 {
     min-width: 100%;
     object-fit: fill;
     position: absolute;
-    top: -7em;
+    top: -20em;
   }
   .menu {
     max-width: 80%;
     padding-bottom: 3em;
     padding-top: 2em;
     top: -7em;
+  }
+  .menu__title {
+    justify-content: center;
+  }
+  .menu__title--icon {
+    padding-left: 2em;
   }
   .menu__title--icon:hover::after {
     opacity: 1;
@@ -680,6 +720,11 @@ footer h2 {
   }
   .menu__plats--item {
     width: 80%;
+  }
+  .menu__plats--title {
+    width: 100%;
+    text-align: left;
+    padding-left: 6em;
   }
   .btn {
     margin-top: 1em;
