@@ -129,6 +129,8 @@
   height: 70px;
   background: white;
   border-radius: 25px;
+  position: relative;
+  left: -15px;
 
   &_txt {
     display: flex;
@@ -137,10 +139,16 @@
 
   &_select {
 
-
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    right: -40px;
+    width: 60px;
+    height: 70px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
     background-color: rgb(158, 227, 158);
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 200ms;
 
   }
 
@@ -156,8 +164,22 @@
     font-weight: 300;
     font-family: $font-txt;
   }
+
 }
 
+.menu__plats--item_price {
+  transform: translateX(0px);
+  transition: translate 300ms;
+}
+
+.menu__plats--item:active>.menu__plats--item_select {
+  opacity: 1;
+  transform: translateX(-40px);
+}
+
+.menu__plats--item:active>.menu__plats--item_price {
+  transform: translateX(-50px);
+}
 
 
 //class entrees, plats, dessert pour faire apparaitre les plats petit à petit//
