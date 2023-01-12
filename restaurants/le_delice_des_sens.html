@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="../public/css/style.css"/>
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,16 +31,18 @@
         <img
           src="../public/img/logo/ohmyfood.png"
           alt="logo de l'entreprise ho my food"
-          class="restaurants__header--icon"
+          class="restaurants__header--logo"
         />
       </header>
       <main>
         <section class="contener__menu">
-          <img
-            src="../public/img/restaurants/desktop/louis-hansel.jpg"
-            alt="photo de l'interieur du restaurant le délice des sens"
-            class="hero"
-          />
+          <div class="contener__menu--hero">
+            <img
+              src="../public/img/restaurants/desktop/louis-hansel.jpg"
+              alt="photo de l'interieur du restaurant le délice des sens"
+              class="heroImg"
+            />
+          </div>
           <div class="menu">
             <div class="menu__title">
               <h1 class="menu__title--title">Le délice des sens</h1>
@@ -52,31 +54,32 @@
               </div>
             </div>
             <div class="menu__plats">
-              <h2>ENTREES</h2>
-            
-                <div class="menu__plats--item entrees">
-                  <div class="menu__plats--item_txt">
-                    <h3>Tartare de thon</h3>
-                    <p>Assaisonné au yuzu</p>
-                  </div>
-                  <span>25&#8364;</span>
+              <h2 class="menu__plats--title">ENTREES</h2>
+
+              <div class="menu__plats--item entrees">
+                <div class="menu__plats--item_txt">
+                  <h3>Tartare de thon</h3>
+                  <p>Assaisonné au yuzu</p>
                 </div>
-                <div class="menu__plats--item entrees">
-                  <div class="menu__plats--item_txt">
-                    <h3>Bouchée de homard croustillant</h3>
-                    <p>Et sa farandole de petits légumes</p>
-                  </div>
-                  <span>35&#8364;</span>
-                </div>
-                <div class="menu__plats--item entrees">
-                  <div class="menu__plats--item_txt">
-                    <h3>Velouté de cèpes</h3>
-                    <p>Aux truffes</p>
-                  </div>
-                  <span>20&#8364;</span>
-                </div>
+                <span>25&#8364;</span>
               </div>
-              <h2>PLATS</h2>
+              <div class="menu__plats--item entrees">
+                <div class="menu__plats--item_txt">
+                  <h3>Bouchée de homard croustillant</h3>
+                  <p>Et sa farandole de petits légumes</p>
+                </div>
+                <span>35&#8364;</span>
+              </div>
+              <div class="menu__plats--item entrees">
+                <div class="menu__plats--item_txt">
+                  <h3>Velouté de cèpes</h3>
+                  <p>Aux truffes</p>
+                </div>
+                <span>20&#8364;</span>
+              </div>
+            </div>
+            <div class="menu__plats">
+              <h2 class="menu__plats--title">PLATS</h2>
               <div class="menu__plats--item plats">
                 <div class="menu__plats--item_txt">
                   <h3>Poulet rôti aux herbes de Provence</h3>
@@ -98,7 +101,9 @@
                 </div>
                 <span>44&#8364;</span>
               </div>
-              <h2>DESSERTS</h2>
+            </div>
+            <div class="menu__plats">
+              <h2 class="menu__plats--title">DESSERTS</h2>
               <div class="menu__plats--item desserts">
                 <div class="menu__plats--item_txt">
                   <h3>Farandole de desserts</h3>
