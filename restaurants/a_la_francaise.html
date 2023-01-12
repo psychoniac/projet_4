@@ -37,11 +37,14 @@
       </header>
       <main>
         <section class="contener__menu">
-          <img
-            src="../public/img/restaurants/desktop/toa-heftiba.jpg"
-            alt="photo de l'intérieur du restaurant"
-            class="hero"
-          />
+          <div class="contener__menu--hero">
+            <img
+              src="../public/img/restaurants/desktop/toa-heftiba.jpg"
+              alt="photo de l'intérieur du restaurant"
+              class="heroImg"
+            />
+          </div>
+
           <div class="menu">
             <div class="menu__title">
               <h1 class="menu__title--title">A la française</h1>
@@ -53,7 +56,8 @@
               </div>
             </div>
             <div class="menu__plats">
-              <h2>ENTREES</h2>
+              <h2 class="menu__plats--title">ENTREES</h2>
+              <!--    <hr class="menu__plats--underline" />-->
 
               <div class="menu__plats--item entrees">
                 <div class="menu__plats--item_txt">
@@ -86,6 +90,7 @@
               </div>
 
               <h2>PLATS</h2>
+              <hr />
               <div class="menu__plats--item plats">
                 <div class="menu__plats--item_txt">
                   <h3>Coquilles Saint-Jacques</h3>
@@ -108,6 +113,7 @@
                 <span>44&#8364;</span>
               </div>
               <h2>DESSERTS</h2>
+              <hr />
               <div class="menu__plats--item desserts">
                 <div class="menu__plats--item_txt">
                   <h3>Pétales de violettes glacés</h3>
