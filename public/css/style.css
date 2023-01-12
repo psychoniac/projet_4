@@ -421,8 +421,9 @@ footer h2 {
   align-items: center;
 }
 .contener__menu--hero {
-  max-width: 100%;
+  min-width: 100%;
   height: 275px;
+  overflow: hidden;
 }
 
 .heroImg {
@@ -449,6 +450,7 @@ footer h2 {
   align-items: center;
   padding-top: 1em;
 }
+
 .menu__title--title {
   font-size: 28px;
   font-weight: 400;
@@ -462,9 +464,6 @@ footer h2 {
   position: relative;
   transition: all 500ms;
 }
-.menu__title--icon:active::after {
-  opacity: 1;
-}
 .menu__title--icon::after {
   content: url(/public/img/icon_svg/heart_gradient.svg);
   position: absolute;
@@ -472,6 +471,9 @@ footer h2 {
   opacity: 0;
   width: 22px;
   height: 21px;
+}
+.menu__title--icon:active::after {
+  opacity: 1;
 }
 
 .menu__plats {
@@ -507,6 +509,31 @@ footer h2 {
   display: flex;
   flex-direction: column;
 }
+.menu__plats--item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-overflow: ellipsis;
+}
+.menu__plats--item p {
+  text-overflow: ellipsis;
+}
+
+.menu__plats--item_price {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Roboto";
+  transform: translateX(0px);
+  transition: all 2s;
+}
+
+.menu__plats--item:active > .menu__plats--item_price {
+  transform: translateX(-50px);
+}
+
 .menu__plats--item_select {
   position: absolute;
   right: -40px;
@@ -517,32 +544,12 @@ footer h2 {
   background-color: rgb(158, 227, 158);
   opacity: 0;
   transform: translateX(0px);
-  transition: all 200ms;
-}
-.menu__plats--item h3 {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Roboto";
-  text-overflow: ellipsis;
-}
-.menu__plats--item span {
-  font-size: 15px;
-  font-weight: 300;
-  font-family: "Roboto";
-}
-
-.menu__plats--item_price {
-  transform: translateX(0px);
-  transition: translate 300ms;
+  transition: all 2s;
 }
 
 .menu__plats--item:active > .menu__plats--item_select {
   opacity: 1;
   transform: translateX(-40px);
-}
-
-.menu__plats--item:active > .menu__plats--item_price {
-  transform: translateX(-50px);
 }
 
 .entrees {
@@ -640,9 +647,6 @@ footer h2 {
     order: 5;
   }
   /*Pour les pages restaurants*/
-  .contener_principal {
-    align-items: normal;
-  }
   .restaurants__header {
     justify-content: space-around;
     padding-top: 1em;
@@ -650,15 +654,23 @@ footer h2 {
   .contener__menu {
     width: 100%;
   }
-  .hero {
-    min-width: 100%;
+  .contener__menu--hero {
+    width: 100%;
     height: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  .heroImg {
+    min-width: 100%;
     object-fit: fill;
+    position: absolute;
+    top: -7em;
   }
   .menu {
     max-width: 80%;
     padding-bottom: 3em;
     padding-top: 2em;
+    top: -7em;
   }
   .menu__title--icon:hover::after {
     opacity: 1;
