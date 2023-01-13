@@ -66,6 +66,7 @@
     &-icon {
       position: relative;
       padding-right: 1em;
+      padding-top: 1em;
       transition: opacity 250ms;
 
       &:active::after {
