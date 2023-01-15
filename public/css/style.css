@@ -705,7 +705,7 @@ footer h2 {
     top: -20em;
   }
   .menu {
-    max-width: 80%;
+    max-width: 60%;
     padding-bottom: 3em;
     padding-top: 2em;
     top: -7em;
@@ -779,6 +779,10 @@ footer h2 {
   }
   .menu__plats {
     align-items: center;
+  }
+  .menu__plats--item {
+    width: 60%;
+    max-width: 350px;
   }
 }
 

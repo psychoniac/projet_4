@@ -59,5 +59,11 @@
 
   .menu__plats {
     align-items: center;
+
+    &--item {
+      width: 60%;
+      max-width: 350px;
+
+    }
   }
 }
