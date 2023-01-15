@@ -713,8 +713,8 @@ footer h2 {
   .menu__title {
     justify-content: center;
   }
-  .menu__title--icon {
-    padding-left: 2em;
+  .menu__title--title {
+    padding-right: 1em;
   }
   .menu__title--icon:hover::after {
     opacity: 1;

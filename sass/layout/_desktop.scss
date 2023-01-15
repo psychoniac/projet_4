@@ -116,13 +116,17 @@
 
   .menu__title {
     justify-content: center;
-  }
 
-  .menu__title--icon {
-    padding-left: 2em;
+    &--title {
+      padding-right: 1em;
+    }
 
-    &:hover::after {
-      opacity: 1;
+    &--icon {
+
+
+      &:hover::after {
+        opacity: 1;
+      }
     }
   }
 
