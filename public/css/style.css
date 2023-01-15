@@ -652,6 +652,9 @@ footer h2 {
     color: #9356dc;
     background: white;
   }
+  .functioning__title {
+    width: 70%;
+  }
   .functioning__contener {
     flex-direction: row;
     justify-content: center;
@@ -743,7 +746,7 @@ footer h2 {
     margin-top: 1em;
   }
   .div_vide {
-    left: 286px;
+    left: 280px;
     width: 60%;
     height: 115px;
     bottom: 147px;

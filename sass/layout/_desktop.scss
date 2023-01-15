@@ -25,6 +25,10 @@
     }
   }
 
+  .functioning__title {
+    width: 70%;
+  }
+
   .functioning__contener {
     flex-direction: row;
     justify-content: center;
@@ -150,7 +154,7 @@
   }
 
   .div_vide {
-    left: 286px;
+    left: 280px;
     width: 60%;
     height: 115px;
     bottom: 147px;
