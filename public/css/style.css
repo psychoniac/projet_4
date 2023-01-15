@@ -396,6 +396,7 @@ footer h2 {
 }
 
 .contener_principal {
+  position: relative;
   min-width: 375px;
   width: 100%;
   background-color: rgb(237, 237, 237);
@@ -482,7 +483,7 @@ footer h2 {
 }
 
 .menu__plats {
-  min-width: 80%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -555,6 +556,14 @@ footer h2 {
 .menu__plats--item:active > .menu__plats--item_select {
   opacity: 1;
   transform: translateX(-40px);
+}
+
+.div_vide {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 175px;
 }
 
 .entrees_title {
@@ -777,12 +786,22 @@ footer h2 {
     height: auto;
     max-width: 100%;
   }
+  .menu {
+    width: 60%;
+    max-width: 80%;
+  }
   .menu__plats {
     align-items: center;
   }
   .menu__plats--item {
     width: 60%;
     max-width: 350px;
+  }
+  .div_vide {
+    width: 60%;
+    height: 40px;
+    bottom: 102px;
+    left: 153px;
   }
 }
 

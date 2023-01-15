@@ -57,6 +57,11 @@
     max-width: 100%;
   }
 
+  .menu {
+    width: 60%;
+    max-width: 80%;
+  }
+
   .menu__plats {
     align-items: center;
 
@@ -65,5 +70,12 @@
       max-width: 350px;
 
     }
+  }
+
+  .div_vide {
+    width: 60%;
+    height: 40px;
+    bottom: 102px;
+    left: 153px;
   }
 }
