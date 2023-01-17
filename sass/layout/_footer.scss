@@ -1,4 +1,5 @@
 footer {
+
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -6,7 +7,6 @@ footer {
   gap: 0.5em;
   background-color: #353535;
   padding-bottom: 2em;
-  color: white;
 
   & h2 {
     color: white;
@@ -24,9 +24,18 @@ footer {
   align-items: center;
   gap: 1em;
   padding-left: 1em;
+  color: white;
+
+  & a {
+    color: white;
+
+  }
 }
 
 .footer__link {
+  display: flex;
+  align-items: center;
   padding-left: 1em;
+  color: white;
 
 }

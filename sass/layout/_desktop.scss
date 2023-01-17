@@ -95,6 +95,7 @@
 
   .contener__menu {
     width: 100%;
+    background-color: white;
   }
 
   .contener__menu--hero {
@@ -116,6 +117,7 @@
     padding-bottom: 3em;
     padding-top: 2em;
     top: -7em;
+    background-color: #e0dddd;
   }
 
   .menu__title {
@@ -153,10 +155,12 @@
     margin-top: 1em;
   }
 
+  /*
   .div_vide {
-    left: 280px;
+    background-color: #e0dddd;
+    left: 288px;
     width: 60%;
     height: 115px;
     bottom: 147px;
-  }
+  }*/
 }
