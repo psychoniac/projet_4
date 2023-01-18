@@ -27,6 +27,14 @@
   }
 }
 
+.div_vide {
+  height: 1055px;
+  width: 375px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+}
 
 
 .contener__menu {
@@ -48,16 +56,15 @@
 
 .menu {
   width: 100%;
-  max-width: 1055px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  position: relative;
-  top: -2em;
   background-color: #f7f7f7;
-  padding-bottom: 2em;
+  position: relative;
+  top: -3em;
+
 
 
   &__title {

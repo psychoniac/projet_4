@@ -422,6 +422,14 @@ footer h2 {
   padding-right: 2em;
 }
 
+.div_vide {
+  height: 1055px;
+  width: 375px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
 .contener__menu {
   display: flex;
   flex-direction: column;
@@ -439,16 +447,14 @@ footer h2 {
 
 .menu {
   width: 100%;
-  max-width: 1055px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  position: relative;
-  top: -2em;
   background-color: #f7f7f7;
-  padding-bottom: 2em;
+  position: relative;
+  top: -3em;
 }
 .menu__title {
   width: 100%;
@@ -740,14 +746,6 @@ footer h2 {
   .btn {
     margin-top: 1em;
   }
-  /*
-  .div_vide {
-    background-color: #e0dddd;
-    left: 288px;
-    width: 60%;
-    height: 115px;
-    bottom: 147px;
-  }*/
 }
 @media screen and (min-width: 768px) and (max-width: 1224px) {
   .contener {
