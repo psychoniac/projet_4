@@ -454,7 +454,7 @@ footer h2 {
   border-top-right-radius: 25px;
   background-color: #f7f7f7;
   position: relative;
-  top: -5em;
+  top: -2em;
 }
 .menu__title {
   width: 100%;
@@ -490,12 +490,12 @@ footer h2 {
 }
 
 .menu__plats {
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .menu__plats--title::after {
@@ -515,21 +515,21 @@ footer h2 {
   height: 70px;
   background: white;
   border-radius: 25px;
-  position: relative;
-  left: -15px;
 }
 .menu__plats--item_txt {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__plats--item h3 {
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto";
+  overflow: hidden;
   text-overflow: ellipsis;
-}
-.menu__plats--item p {
-  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__plats--item_price {
@@ -539,30 +539,26 @@ footer h2 {
   font-size: 15px;
   font-weight: 300;
   font-family: "Roboto";
-  transform: translateX(0px);
-  transition: all 2s;
-}
-
-.menu__plats--item:active > .menu__plats--item_price {
-  transform: translateX(-50px);
 }
 
 .menu__plats--item_select {
-  position: absolute;
-  right: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  translate: 50px;
   width: 60px;
   height: 70px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   background-color: rgb(158, 227, 158);
   opacity: 0;
-  transform: translateX(0px);
+  margin-right: 0px;
   transition: all 2s;
 }
 
 .menu__plats--item:active > .menu__plats--item_select {
   opacity: 1;
-  transform: translateX(-40px);
+  margin-right: 40px;
 }
 
 .entrees_title {
@@ -571,7 +567,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 1000ms;
+  animation-delay: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -582,7 +578,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 3000ms;
+  animation-delay: 1.5s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -593,7 +589,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 5000ms;
+  animation-delay: 2s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -604,7 +600,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 6000ms;
+  animation-delay: 2.5s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -615,7 +611,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 7000ms;
+  animation-delay: 3s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -626,7 +622,7 @@ footer h2 {
   animation-iteration-count: 1;
   animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  animation-delay: 8000ms;
+  animation-delay: 3.5s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
