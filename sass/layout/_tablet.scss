@@ -57,26 +57,27 @@
     max-width: 100%;
   }
 
-  .menu {
+  .div_vide {
     width: 60%;
-    max-width: 80%;
+    height: 1000px;
+
   }
+
+  .menu {
+    padding-bottom: 1em;
+    top: -4em;
+  }
+
 
   .menu__plats {
     align-items: center;
 
     &--item {
-      width: 60%;
+      width: 80%;
       max-width: 350px;
 
     }
   }
 
-  /*
-  .div_vide {
-    width: 60%;
-    height: 40px;
-    bottom: 102px;
-    left: 153px;
-  }*/
+
 }

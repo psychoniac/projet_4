@@ -27,14 +27,7 @@
   }
 }
 
-.div_vide {
-  height: 1055px;
-  width: 375px;
-  background-color: #f7f7f7;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 
-}
 
 
 .contener__menu {
@@ -54,6 +47,15 @@
   width: 100%;
 }
 
+.div_vide {
+  height: 1055px;
+  width: 375px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+}
+
 .menu {
   width: 100%;
   display: flex;
@@ -63,7 +65,7 @@
   border-top-right-radius: 25px;
   background-color: #f7f7f7;
   position: relative;
-  top: -3em;
+  top: -5em;
 
 
 
