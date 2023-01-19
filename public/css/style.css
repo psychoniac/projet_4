@@ -105,7 +105,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: anim_loader 5000ms linear 3000ms infinite normal both;
+  animation-name: anim_loader;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-delay: 5000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .contener__loader--text {
   background-color: lightpink;
@@ -115,12 +121,15 @@ button {
   border: 4mm ridge rebeccapurple;
   padding: 2em;
   border-radius: 50%;
-  animation: anim_textloader 2000ms linear infinite normal both;
+  animation-name: anim_textloader;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-delay: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
 }
-
-.loader__title {
-  font-family: "Shrikhand";
-  font-size: 32px;
+.contener__loader--text-title {
   font-weight: 700;
 }
 
