@@ -144,6 +144,15 @@
       font-size: 18px;
       font-weight: 500;
       font-family: $font-txt;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    & p {
+
+      overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
     }
   }

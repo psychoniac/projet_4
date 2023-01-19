@@ -535,6 +535,13 @@ footer h2 {
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto";
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__plats--item_txt p {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
