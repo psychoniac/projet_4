@@ -6,8 +6,9 @@
   position: fixed;
   z-index: 10;
   @include row_contener;
-  animation: anim_loader 5000ms 4000ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+
+  animation: anim_loader 5000ms linear 3000ms infinite normal both;
+
 
   &--text {
 
@@ -18,7 +19,7 @@
     border: 4mm ridge rebeccapurple;
     padding: 2em;
     border-radius: 50%;
-    animation: anim_textloader 1000ms 1000ms infinite both;
+    animation: anim_textloader 2000ms linear infinite normal both;
   }
 }
 
