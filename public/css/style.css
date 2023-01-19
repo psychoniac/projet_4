@@ -418,7 +418,7 @@ footer h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0 1em 0;
+  padding: 0 0 1em 0;
 }
 .restaurants__header--icon {
   max-width: 200px;
