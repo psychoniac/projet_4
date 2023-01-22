@@ -134,6 +134,7 @@ button {
 }
 
 .contener {
+  min-width: 375px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -141,7 +142,6 @@ button {
   font-family: "Roboto";
   font-size: 16px;
   color: #000;
-  max-width: 100%;
 }
 
 header {
@@ -373,7 +373,6 @@ header {
 }
 
 footer {
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -772,35 +771,18 @@ footer h2 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1224px) {
-  .contener {
-    min-width: 768px;
-  }
-  .functioning {
-    width: 100%;
-    align-items: center;
-  }
-  .functioning__title {
-    text-align: center;
-  }
   .functioning__contener {
-    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 3em;
-  }
-  .functioning__contener--item i {
-    padding-right: 1em;
-    color: grey;
   }
   .card_contener {
     flex-direction: row;
   }
   footer {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding-top: 1em;
-  }
-  footer :nth-child(1) {
-    order: 5;
   }
   footer h2 {
     padding-top: 0%;
@@ -809,24 +791,23 @@ footer h2 {
   .restaurants__header {
     justify-content: space-around;
   }
-  .hero {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
   .div_vide {
     width: 60%;
     height: 1000px;
   }
   .menu {
     padding-bottom: 1em;
-    top: -4em;
+    top: -5em;
+  }
+  .div_vide2 {
+    height: 1076px;
+    width: 60%;
   }
   .menu__plats {
     align-items: center;
   }
   .menu__plats--item {
-    width: 80%;
+    width: 90%;
     max-width: 350px;
   }
 }

@@ -1,4 +1,5 @@
 .contener {
+  min-width: 375px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,5 +7,4 @@
   font-family: $font-txt;
   font-size: 16px;
   color: #000;
-  max-width: 100%;
 }

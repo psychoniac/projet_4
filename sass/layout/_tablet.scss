@@ -1,31 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 1224px) {
-  .contener {
-    min-width: 768px;
-  }
+  .functioning__contener {
 
-  .functioning {
-    width: 100%;
-    align-items: center;
-
-    &__title {
-      text-align: center;
-    }
-
-    &__contener {
-      width: 100%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-left: 3em;
-
-      &--item {
-
-
-        & i {
-          padding-right: 1em;
-          color: grey;
-        }
-      }
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 3em;
   }
 
   .card_contener {
@@ -34,12 +12,9 @@
   }
 
   footer {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding-top: 1em;
-
-    & :nth-child(1) {
-      order: 5;
-    }
 
     & h2 {
       padding-top: 0%;
@@ -51,12 +26,6 @@
     justify-content: space-around;
   }
 
-  .hero {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
   .div_vide {
     width: 60%;
     height: 1000px;
@@ -65,7 +34,12 @@
 
   .menu {
     padding-bottom: 1em;
-    top: -4em;
+    top: -5em;
+  }
+
+  .div_vide2 {
+    height: 1076px;
+    width: 60%;
   }
 
 
@@ -73,11 +47,9 @@
     align-items: center;
 
     &--item {
-      width: 80%;
+      width: 90%;
       max-width: 350px;
 
     }
   }
-
-
 }
