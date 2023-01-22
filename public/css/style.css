@@ -702,6 +702,7 @@ footer h2 {
     opacity: 1;
   }
   footer {
+    z-index: 2;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -739,12 +740,16 @@ footer h2 {
   .div_vide {
     height: 1022px;
     width: 1055px;
+    background-color: rgb(246, 246, 246);
+  }
+  .div_vide2 {
+    width: 80%;
   }
   .menu {
+    background-color: rgb(246, 246, 246);
     padding-bottom: 3em;
     padding-top: 2em;
-    top: -7em;
-    background-color: #e0dddd;
+    top: -10em;
   }
   .menu__title {
     justify-content: center;
@@ -760,6 +765,10 @@ footer h2 {
   }
   .menu__plats--item {
     width: 80%;
+  }
+  .menu__plats--item:hover > .menu__plats--item_select {
+    width: 60px;
+    opacity: 1;
   }
   .menu__plats--title {
     width: 100%;
