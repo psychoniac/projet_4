@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 1em 0;
+  padding: 1em 0 1em 0;
 
 
   &--icon {
@@ -48,6 +48,14 @@
 }
 
 .div_vide {
+  height: 990px;
+  width: 375px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.div_vide2 {
   height: 1055px;
   width: 375px;
   background-color: #f7f7f7;
@@ -64,7 +72,7 @@
   border-top-right-radius: 25px;
   background-color: #f7f7f7;
   position: relative;
-  top: -2em;
+  top: -7em;
 
   &__title {
     width: 100%;
@@ -128,7 +136,6 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 1em;
-  padding-right: 1em;
   height: 70px;
   background: white;
   border-radius: 25px;
@@ -154,6 +161,9 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      font-weight: 400;
+      font-family: $font-txt;
+      font-size: 16px;
     }
   }
 }
@@ -172,21 +182,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  translate: 50px;
-  width: 60px;
+  width: 0px;
   height: 70px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: rgb(158, 227, 158);
+  background-color: #99E2D0;
   opacity: 0;
-  margin-right: 0px;
   transition: all 2s;
 }
 
 .menu__plats--item:active>.menu__plats--item_select {
+  width: 60px;
   opacity: 1;
-  margin-right: 40px;
 }
+
+
 
 //class entrees, plats, dessert pour faire apparaitre les plats petit à petit//
 .entrees_title {
