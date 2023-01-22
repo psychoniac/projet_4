@@ -317,17 +317,19 @@ header {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
-  color: black;
   font-family: "Roboto";
   padding-top: 0.5em;
 }
 .card__bottom-title h2 {
+  color: black;
   font-size: 18px;
   font-weight: 700;
 }
 .card__bottom-title h3 {
   font-size: 17px;
   font-weight: 300;
+  font-family: "Roboto";
+  color: black;
 }
 .card__bottom-icon {
   position: relative;
