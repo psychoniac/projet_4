@@ -47,7 +47,7 @@
   width: 100%;
 }
 
-.div_vide {
+.div_background {
   min-height: 990px;
   width: 375px;
   background-color: #f7f7f7;
@@ -139,10 +139,25 @@
   height: 70px;
   background: white;
   border-radius: 25px;
+  overflow: hidden;
+  transition: all 150ms;
+
+
+
+  &:active>.menu__plats--item_price::after {
+
+    width: 60px;
+    opacity: 1;
+
+
+
+
+  }
 
   &_txt {
     display: flex;
     flex-direction: column;
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -168,6 +183,8 @@
   }
 }
 
+
+
 .menu__plats--item_price {
   display: flex;
   align-items: center;
@@ -175,10 +192,14 @@
   font-size: 15px;
   font-weight: 300;
   font-family: $font-txt;
+
+  right: 2em;
 }
 
 //transition pour l'affichage de l'encoche//
-.menu__plats--item_select {
+.menu__plats--item_price::after {
+  content: url(/public/img/icon_svg/encoche.svg);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,13 +209,12 @@
   border-top-right-radius: 25px;
   background-color: #99E2D0;
   opacity: 0;
-  transition: all 2s;
+
+
 }
 
-.menu__plats--item:active>.menu__plats--item_select {
-  width: 60px;
-  opacity: 1;
-}
+
+
 
 
 
