@@ -68,19 +68,22 @@
       position: relative;
       padding-right: 1em;
       padding-top: 1em;
-      transition: opacity 250ms;
+      transition: all 250ms;
+
+      &::after {
+        content: url(/public/img/icon_svg/heart_gradient.svg);
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+      }
 
       &:active::after {
         opacity: 1;
       }
     }
 
-    &-icon::after {
-      content: url(/public/img/icon_svg/heart_gradient.svg);
-      position: absolute;
-      left: 0px;
-      opacity: 0;
 
-    }
+
   }
+
 }
