@@ -71,7 +71,7 @@
       transition: all 50ms;
 
       &::after {
-        content: url(./public/img/icon_svg/heart_gradient.svg);
+        content: url(/public/img/icon_svg/heart_gradient.svg);
         position: absolute;
         left: 0px;
         opacity: 0;
