@@ -37,7 +37,6 @@
 
     &--item {
 
-
       &:hover {
         background-color: rgba(245, 237, 255, 1);
       }
@@ -101,7 +100,7 @@
 
   .contener__menu--hero {
     width: 100%;
-    height: 500px;
+    height: 445px;
     overflow: hidden;
     position: relative;
   }
@@ -113,22 +112,19 @@
     top: -20em;
   }
 
-  .div_vide {
-    height: 1022px;
+  .div_background {
+    min-height: 1105px;
     width: 1055px;
     background-color: rgba(246, 246, 246, 1);
   }
 
-  .div_vide2 {
-    width: 80%;
-  }
+
 
   .menu {
 
     background-color: rgba(246, 246, 246, 1);
-    padding-bottom: 3em;
     padding-top: 2em;
-    top: -10em;
+    top: -4em;
 
 
   }
@@ -158,7 +154,7 @@
     }
   }
 
-  .menu__plats--item:hover>.menu__plats--item_select {
+  .menu__plats--item:hover>.menu__plats--item_price::after {
     width: 60px;
     opacity: 1;
   }
@@ -166,7 +162,7 @@
   .menu__plats--title {
     width: 100%;
     text-align: left;
-    padding-left: 6em;
+    padding-left: 8em;
   }
 
   .btn {

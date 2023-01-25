@@ -456,14 +456,6 @@ footer h2 {
   border-top-right-radius: 25px;
 }
 
-.div_vide2 {
-  height: 1055px;
-  width: 375px;
-  background-color: #f7f7f7;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-
 .menu {
   width: 100%;
   display: flex;
@@ -473,7 +465,7 @@ footer h2 {
   border-top-right-radius: 25px;
   background-color: #f7f7f7;
   position: relative;
-  top: -7em;
+  top: -2em;
 }
 .menu__title {
   width: 100%;
@@ -494,7 +486,7 @@ footer h2 {
   width: 22px;
   height: 21px;
   position: relative;
-  transition: all 500ms;
+  transition: all 250ms;
 }
 .menu__title--icon::after {
   content: url(/public/img/icon_svg/heart_gradient.svg);
@@ -509,7 +501,7 @@ footer h2 {
 }
 
 .menu__plats {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -519,7 +511,7 @@ footer h2 {
 
 .menu__plats--title::after {
   content: "";
-  width: 20%;
+  width: 40px;
   height: 3px;
   background-color: #99E2D0;
   display: block;
@@ -534,7 +526,6 @@ footer h2 {
   background: white;
   border-radius: 25px;
   overflow: hidden;
-  transition: all 150ms;
 }
 .menu__plats--item:active > .menu__plats--item_price::after {
   width: 60px;
@@ -571,7 +562,6 @@ footer h2 {
   font-size: 15px;
   font-weight: 300;
   font-family: "Roboto";
-  right: 2em;
 }
 
 .menu__plats--item_price::after {
@@ -581,10 +571,12 @@ footer h2 {
   align-items: center;
   width: 0px;
   height: 70px;
+  margin-left: 15px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #99E2D0;
   opacity: 0;
+  transition: all 500ms;
 }
 
 .entrees_title {
@@ -729,7 +721,7 @@ footer h2 {
   }
   .contener__menu--hero {
     width: 100%;
-    height: 500px;
+    height: 445px;
     overflow: hidden;
     position: relative;
   }
@@ -739,19 +731,15 @@ footer h2 {
     position: absolute;
     top: -20em;
   }
-  .div_vide {
-    height: 1022px;
+  .div_background {
+    min-height: 1105px;
     width: 1055px;
     background-color: rgb(246, 246, 246);
   }
-  .div_vide2 {
-    width: 80%;
-  }
   .menu {
     background-color: rgb(246, 246, 246);
-    padding-bottom: 3em;
     padding-top: 2em;
-    top: -10em;
+    top: -4em;
   }
   .menu__title {
     justify-content: center;
@@ -768,14 +756,14 @@ footer h2 {
   .menu__plats--item {
     width: 80%;
   }
-  .menu__plats--item:hover > .menu__plats--item_select {
+  .menu__plats--item:hover > .menu__plats--item_price::after {
     width: 60px;
     opacity: 1;
   }
   .menu__plats--title {
     width: 100%;
     text-align: left;
-    padding-left: 6em;
+    padding-left: 8em;
   }
   .btn {
     margin-top: 1em;
@@ -802,24 +790,13 @@ footer h2 {
   .restaurants__header {
     justify-content: space-around;
   }
-  .div_vide {
-    width: 60%;
-    height: 1000px;
-  }
-  .menu {
-    padding-bottom: 1em;
-    top: -5em;
-  }
-  .div_vide2 {
-    height: 1076px;
-    width: 60%;
-  }
-  .menu__plats {
-    align-items: center;
+  .div_background {
+    width: 70%;
+    min-height: 1000px;
   }
   .menu__plats--item {
     width: 90%;
-    max-width: 350px;
+    align-items: center;
   }
 }
 
