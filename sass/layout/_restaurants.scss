@@ -93,7 +93,7 @@
 
 
     &::after {
-      content: url(public/img/icon_svg/heart_gradient.svg);
+      content: url(../public/img/icon_svg/heart_gradient.svg);
       position: absolute;
       left: 0px;
       opacity: 0;
@@ -186,7 +186,7 @@
 
 //transition pour l'affichage de l'encoche//
 .menu__plats--item_price::after {
-  content: url(public/img/icon_svg/encoche.svg);
+  content: url(../public/img/icon_svg/encoche.svg);
 
   display: flex;
   justify-content: center;
