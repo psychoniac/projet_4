@@ -186,7 +186,7 @@
 
 //transition pour l'affichage de l'encoche//
 .menu__plats--item_price::after {
-  content: url(public/img/icon_svg/encoche.svg);
+  content: url(/public/img/icon_svg/encoche.svg);
 
   display: flex;
   justify-content: center;
