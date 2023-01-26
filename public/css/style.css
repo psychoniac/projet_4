@@ -340,9 +340,11 @@ header {
   transition: all 50ms;
 }
 .card__bottom-icon::after {
-  content: url(/public/img/icon_svg/heart_gradient.svg);
+  content: url(../img/icon_svg/heart_gradient.svg);
   position: absolute;
   left: 0px;
+  width: 22px;
+  height: 21px;
   opacity: 0;
 }
 .card__bottom-icon:active::after {
@@ -489,7 +491,7 @@ footer h2 {
   transition: all 250ms;
 }
 .menu__title--icon::after {
-  content: url(/public/img/icon_svg/heart_gradient.svg);
+  content: url(../img/icon_svg/heart_gradient.svg);
   position: absolute;
   left: 0px;
   opacity: 0;
@@ -565,7 +567,7 @@ footer h2 {
 }
 
 .menu__plats--item_price::after {
-  content: url(/public/img/icon_svg/encoche.svg);
+  content: url(../img/icon_svg/encoche.svg);
   display: flex;
   justify-content: center;
   align-items: center;
