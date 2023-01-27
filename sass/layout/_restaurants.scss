@@ -137,8 +137,6 @@
   border-radius: 25px;
   overflow: hidden;
 
-
-
   &:active>.menu__plats--item_price::after {
     width: 60px;
     opacity: 1;
@@ -189,7 +187,6 @@
 //transition pour l'affichage de l'encoche//
 .menu__plats--item_price::after {
   content: url(../img/icon_svg/encoche.svg);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +198,6 @@
   background-color: #99E2D0;
   opacity: 0;
   transition: all 500ms;
-
 }
 
 

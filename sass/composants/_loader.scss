@@ -7,9 +7,9 @@
   z-index: 10;
   @include row_contener;
   animation-name: anim_loader;
-  animation-duration: 5000ms;
+  animation-duration: 3000ms;
   animation-timing-function: linear;
-  animation-delay: 5000ms;
+  animation-delay: 3000ms;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -24,9 +24,9 @@
     padding: 2em;
     border-radius: 50%;
     animation-name: anim_textloader;
-    animation-duration: 3000ms;
+    animation-duration: 1000ms;
     animation-timing-function: linear;
-    animation-delay: 1000ms;
+    animation-delay: 500ms;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-fill-mode: both;
