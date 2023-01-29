@@ -1,6 +1,8 @@
 @media screen and (min-width: 1225px) {
+
   .localisation {
     height: 50px;
+    background-color: #eaeaea;
   }
 
   .localisation i {
@@ -10,7 +12,7 @@
   }
 
   .presentation {
-    background-color: #e3e1e1;
+
 
     &__content1 {
       font-size: 40px;
@@ -18,15 +20,9 @@
     }
   }
 
-  .btn {
-    &:hover {
-      color: #9356dc;
-      background: #ffff;
-    }
-  }
-
   .functioning__title {
-    width: 70%;
+    text-align: left;
+    width: 40%;
   }
 
   .functioning__contener {
@@ -48,12 +44,13 @@
   }
 
   .restaurant {
-    background-color: #e3e1e1;
+
     position: relative;
     padding-left: 6em;
 
     &__title {
-      padding-left: 6.5em;
+      text-align: left;
+      width: 45%;
     }
   }
 
@@ -61,12 +58,6 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 6em;
-  }
-
-  .card__bottom-icon {
-    &:hover::after {
-      opacity: 1;
-    }
   }
 
   footer {
@@ -89,8 +80,9 @@
 
   /*Pour les pages restaurants*/
   .restaurants__header {
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 1em;
+
   }
 
   .contener__menu {

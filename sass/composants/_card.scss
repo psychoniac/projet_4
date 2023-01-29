@@ -68,6 +68,7 @@
       position: relative;
       padding-right: 1em;
       padding-top: 1em;
+      cursor: pointer;
       transition: all 50ms;
 
       &::after {
@@ -79,7 +80,7 @@
         opacity: 0;
       }
 
-      &:active::after {
+      &:hover::after {
         opacity: 1;
       }
     }

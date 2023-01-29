@@ -134,6 +134,7 @@ button {
 }
 
 .contener {
+  width: 100%;
   min-width: 375px;
   position: relative;
   display: flex;
@@ -184,7 +185,7 @@ header {
 }
 
 .presentation {
-  background-color: #e3e3e3;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,21 +220,22 @@ header {
   border-radius: 25px;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   color: white;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, 0, 1, 0, 0);
+  cursor: pointer;
+  transition: all 50ms;
 }
-.btn:active {
-  color: #9356dc;
-  background: white;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  cursor: default;
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .functioning {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4em;
+  padding-bottom: 4em;
+  background-color: white;
 }
 .functioning__title {
   width: 90%;
@@ -254,7 +256,7 @@ header {
 .functioning__contener--item {
   display: flex;
   align-items: center;
-  background-color: rgb(234, 233, 233);
+  background-color: #f7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   width: 320px;
   height: 60px;
@@ -337,6 +339,7 @@ header {
   position: relative;
   padding-right: 1em;
   padding-top: 1em;
+  cursor: pointer;
   transition: all 50ms;
 }
 .card__bottom-icon::after {
@@ -347,13 +350,13 @@ header {
   height: 21px;
   opacity: 0;
 }
-.card__bottom-icon:active::after {
+.card__bottom-icon:hover::after {
   opacity: 1;
 }
 
 .restaurant {
   display: flex;
-  background-color: #e3e3e3;
+  background-color: #f7f7f7;
   flex-direction: column;
   align-items: center;
   padding: 3em 0 3em 0;
@@ -500,7 +503,7 @@ footer h2 {
   width: 22px;
   height: 21px;
 }
-.menu__title--icon:active::after {
+.menu__title--icon:hover::after {
   opacity: 1;
 }
 
@@ -529,9 +532,9 @@ footer h2 {
   height: 70px;
   background: white;
   border-radius: 25px;
-  overflow: hidden;
+  cursor: pointer;
 }
-.menu__plats--item:active > .menu__plats--item_price::after {
+.menu__plats--item:hover > .menu__plats--item_price::after {
   width: 60px;
   opacity: 1;
 }
@@ -652,25 +655,20 @@ footer h2 {
 @media screen and (min-width: 1225px) {
   .localisation {
     height: 50px;
+    background-color: #eaeaea;
   }
   .localisation i {
     padding: 0%;
     width: 5%;
     background-color: #eaeaea;
   }
-  .presentation {
-    background-color: #e3e1e1;
-  }
   .presentation__content1 {
     font-size: 40px;
     line-height: 46px;
   }
-  .btn:hover {
-    color: #9356dc;
-    background: white;
-  }
   .functioning__title {
-    width: 70%;
+    text-align: left;
+    width: 40%;
   }
   .functioning__contener {
     flex-direction: row;
@@ -684,20 +682,17 @@ footer h2 {
     left: -0.5em;
   }
   .restaurant {
-    background-color: #e3e1e1;
     position: relative;
     padding-left: 6em;
   }
   .restaurant__title {
-    padding-left: 6.5em;
+    text-align: left;
+    width: 45%;
   }
   .card_contener {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 6em;
-  }
-  .card__bottom-icon:hover::after {
-    opacity: 1;
   }
   footer {
     z-index: 2;
@@ -716,7 +711,7 @@ footer h2 {
   }
   /*Pour les pages restaurants*/
   .restaurants__header {
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 1em;
   }
   .contener__menu {

@@ -103,7 +103,7 @@
       height: 21px;
     }
 
-    &:active::after {
+    &:hover::after {
       opacity: 1;
     }
   }
@@ -135,9 +135,9 @@
   height: 70px;
   background: white;
   border-radius: 25px;
-  overflow: hidden;
+  cursor: pointer;
 
-  &:active>.menu__plats--item_price::after {
+  &:hover>.menu__plats--item_price::after {
     width: 60px;
     opacity: 1;
   }
