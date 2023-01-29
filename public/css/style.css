@@ -493,6 +493,7 @@ footer h2 {
   width: 22px;
   height: 21px;
   position: relative;
+  cursor: pointer;
   transition: all 250ms;
 }
 .menu__title--icon::after {
