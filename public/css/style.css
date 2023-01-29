@@ -669,7 +669,8 @@ footer h2 {
   }
   .functioning__title {
     text-align: left;
-    width: 40%;
+    width: 100%;
+    padding-left: 27%;
   }
   .functioning__contener {
     flex-direction: row;
@@ -688,12 +689,13 @@ footer h2 {
   }
   .restaurant__title {
     text-align: left;
-    width: 45%;
+    width: 100%;
+    padding-left: 8em;
   }
   .card_contener {
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 6em;
+    padding-left: 15%;
   }
   footer {
     z-index: 2;
