@@ -714,8 +714,11 @@ footer h2 {
   }
   /*Pour les pages restaurants*/
   .restaurants__header {
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 1em;
+  }
+  .restaurants__header--logo {
+    padding-right: 40em;
   }
   .contener__menu {
     width: 100%;

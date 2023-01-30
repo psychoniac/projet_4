@@ -82,9 +82,12 @@
 
   /*Pour les pages restaurants*/
   .restaurants__header {
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 1em;
 
+    &--logo {
+      padding-right: 40em;
+    }
   }
 
   .contener__menu {
