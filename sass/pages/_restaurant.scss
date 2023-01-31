@@ -2,15 +2,14 @@
   display: flex;
   background-color: #f7f7f7;
   flex-direction: column;
-  align-items: center;
   padding: 3em 0 3em 0;
 
   &__title {
-    width: 90%;
     font-family: $font-txt;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+    padding-left: 1em;
 
   }
 }

@@ -233,17 +233,16 @@ header {
 .functioning {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 4em;
   background-color: white;
 }
 .functioning__title {
-  width: 90%;
   font-size: 24px;
   font-weight: 700;
   font-family: "Roboto";
   padding-top: 2em;
   padding-bottom: 1em;
+  padding-left: 1em;
 }
 .functioning__contener {
   display: flex;
@@ -358,15 +357,14 @@ header {
   display: flex;
   background-color: #f7f7f7;
   flex-direction: column;
-  align-items: center;
   padding: 3em 0 3em 0;
 }
 .restaurant__title {
-  width: 90%;
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  padding-left: 1em;
 }
 
 .card_contener {
@@ -668,9 +666,7 @@ footer h2 {
     line-height: 46px;
   }
   .functioning__title {
-    text-align: left;
-    width: 100%;
-    padding-left: 27%;
+    padding-left: 9em;
   }
   .functioning__contener {
     flex-direction: row;
@@ -685,12 +681,9 @@ footer h2 {
   }
   .restaurant {
     position: relative;
-    padding-left: 6em;
   }
   .restaurant__title {
-    text-align: left;
-    width: 100%;
-    padding-left: 8em;
+    padding-left: 9em;
   }
   .card_contener {
     flex-direction: row;

@@ -12,8 +12,6 @@
   }
 
   .presentation {
-
-
     &__content1 {
       font-size: 40px;
       line-height: 46px;
@@ -21,9 +19,7 @@
   }
 
   .functioning__title {
-    text-align: left;
-    width: 100%;
-    padding-left: 27%;
+    padding-left: 9em;
   }
 
   .functioning__contener {
@@ -45,15 +41,12 @@
   }
 
   .restaurant {
-
     position: relative;
-    padding-left: 6em;
 
     &__title {
-      text-align: left;
-      width: 100%;
-      padding-left: 8em;
+      padding-left: 9em;
     }
+
   }
 
   .card_contener {
